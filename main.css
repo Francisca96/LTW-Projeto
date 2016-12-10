@@ -12,16 +12,29 @@ img {
   margin-top: 70px;
 }
 
-#buttons {
-  margin-top: -210px;
+#username {
+  margin-top: -320px;
+}
+
+#password {
+  margin-top: 15px;
+}
+
+input {
+  border: 1px solid black;
+  border-radius: 14px;
+  background-color: white;
+  font-size: 25px;
+  padding-left: 10px;
 }
 
 button#signUpBtn {
+  margin-top: 30px;
   border-radius: 14px;
   background-color: #009ACD;
   border: 3px solid #ffffff;
-  font-size: 27px;
-  margin-right:7px;
+  font-size: 30px;
+  margin-right:5px;
   font-weight: 300;
   color: white;
   font-family: chalkboard;
@@ -31,8 +44,8 @@ button#loginBtn {
   border-radius: 14px;
   background-color: white;
   border: 3px solid #ffffff;
-  font-size: 27px;
-  margin-left: 7px;
+  font-size: 30px;
+  margin-left: 5px;
   font-weight: 300;
   color: #009ACD;
   font-family: chalkboard;
@@ -40,5 +53,6 @@ button#loginBtn {
 
 #visitor a {
   color: white;
-  font-size: 15px;
+  font-size: 17px;
+  padding-left: 75px;
 }
