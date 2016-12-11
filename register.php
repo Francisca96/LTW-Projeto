@@ -25,7 +25,6 @@
         <input id="passwordConfirm" type="password" name="passwordConfirm" placeholder="Repeat your Password" required/>
       </p>
       <button type="submit">Submit</button>
-      <span id="output"></span>
     </form>
   </body>
 </html>
