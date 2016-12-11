@@ -4,48 +4,49 @@ html {
 }
 
 body {
-  margin-top: 0px;
+  margin-top: 0%;
   text-align: center;
 }
 
 img {
-  margin-top: 70px;
+  margin: 6%;
 }
 
 #username {
-  margin-top: -320px;
+  margin-top: -28%;
 }
 
 #password {
-  margin-top: 15px;
+  margin-top: 1%;
 }
 
 input {
   border: 1px solid black;
-  border-radius: 14px;
+  border-radius: 10px;
   background-color: white;
   font-size: 25px;
-  padding-left: 10px;
+  padding-left: 0.5%;
 }
 
 input#signUpBtn {
   margin-top: 30px;
-  border-radius: 14px;
+  margin-right:5px;
+  border-radius: 10px;
   background-color: #009ACD;
   border: 3px solid #ffffff;
-  font-size: 30px;
-  margin-right:5px;
+  font-size: 20px;
   font-weight: 300;
   color: white;
   font-family: chalkboard;
 }
 
 input#loginBtn {
-  border-radius: 14px;
+  margin-bottom: 30px;
+  margin-left: 5px;
+  border-radius: 10px;
   background-color: white;
   border: 3px solid #ffffff;
-  font-size: 30px;
-  margin-left: 5px;
+  font-size: 20px;
   font-weight: 300;
   color: #009ACD;
   font-family: chalkboard;
@@ -54,5 +55,5 @@ input#loginBtn {
 #visitor a {
   color: white;
   font-size: 17px;
-  padding-left: 75px;
+  padding-left: 130px;
 }

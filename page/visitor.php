@@ -10,7 +10,8 @@
     <div>
 			<input id="logReg" value="Login/Register" type="button"  onclick="window.location.href='../main.php';">
     </div>
-		<img id= "logo_simples" src="../images/logo_simples.png"/>
+		<img id= "logo" src="../images/logo.png"/>
+		<h1>Expand your possibilities!</h1>
     <div id="middle-elements">
   		<div id="search-bar">
 				<form action="search" method="post">
