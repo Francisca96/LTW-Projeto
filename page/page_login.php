@@ -9,7 +9,7 @@
 <body>
 <header>
     <div >
-	<!KIKA acrescenta sitio com o nome do utilizador mete 1 À sorte para depois se meter pela base de dados>
+	<!KIKA acrescenta sitio com o nome do utilizador mete 1 À sorte para depois se meter pela base de dados mas com href="profile.php" (para se carregar ir ao profile)>
     </div>
 </header>
 
