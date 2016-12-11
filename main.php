@@ -11,16 +11,14 @@
 		  <input type="text" name="username" placeholder="username">
     </div>
     <div id="password">
-      <input type="text" name="password" placeholder="password">
+      <input type="password" name="password" placeholder="password">
     </div>
     <div id="buttons">
-      <button id="signUpBtn" type="button">Sign up</button>
-      <button id="loginBtn" type="submit">Login</button>
-      <!-- <a href="#" onclick="window.open('register.php', 'Register', 'STATUS=NO, TOOLBAR=NO, LOCATION=NO, DIRECTORIES=NO, RESISABLE=NO, SCROLLBARS=YES, TOP=10, LEFT=10, WIDTH=250, HEIGHT=350');">Sign Up</a>
-      <a href="#" onclick="window.open('login.php', 'Register', 'STATUS=NO, TOOLBAR=NO, LOCATION=NO, DIRECTORIES=NO, RESISABLE=NO, SCROLLBARS=YES, TOP=10, LEFT=10, WIDTH=250, HEIGHT=250');">Login</a> -->
+      <input type="button" value="Sing in" type="button" id="signUpBtn"  onclick="window.location.href='register.php';">
+      <input type="button" value = "Login" type="button" id="loginBtn" onclick="window.location.href='signin.php';">
     </div>
     <div id="visitor">
-      <a href="">Access as a visitor</a>
+      <a href="page/page_logout.php">Access as a visitor</a>
     </div>
   </body>
 </html>
