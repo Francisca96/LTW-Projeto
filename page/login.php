@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-
 <html>
 <head>
 	<title>Bloom</title>
     <meta charset="utf-8">
-    <!por bonito KIKA>
+    <link rel="stylesheet" href="../css/login.css">
 </head>
 <body>
 <header>
-    <div >
-	<input type="button" value="Login/Register" type="button" id="Login/Register"  onclick="window.location.href='../main.php';">
+    <div>
+			<!-- <!KIKA acrescenta sitio com o nome do utilizador mete 1 � sorte para depois se meter pela base de dados mas com href="profile.php" (para se carregar ir ao profile)> -->
     </div>
 </header>
 
-<!Por bonito KIKA>
+<!-- <!Por bonito KIKA> -->
+
 <div id="middle">
     <img src="../images/logo.png"/>
     <div id="middle-elements">

@@ -9,10 +9,16 @@ body {
   margin-right: 100px;
   padding-left: 10px;
   padding-top: 10px;
+
 }
 
 div#profile-img {
-  
+  display: block;
+}
+
+div#type {
+  color: #009ACD;
+  font-size: 25px;
 }
 
 div#user-info {
