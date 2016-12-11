@@ -1,6 +1,6 @@
 html {
   background-color: #009ACD;
-  font-family: chalkboard;
+  font-family: calibri;
 }
 
 body {
@@ -28,7 +28,7 @@ input {
   padding-left: 10px;
 }
 
-button#signUpBtn {
+input#signUpBtn {
   margin-top: 30px;
   border-radius: 14px;
   background-color: #009ACD;
@@ -40,7 +40,7 @@ button#signUpBtn {
   font-family: chalkboard;
 }
 
-button#loginBtn {
+input#loginBtn {
   border-radius: 14px;
   background-color: white;
   border: 3px solid #ffffff;
