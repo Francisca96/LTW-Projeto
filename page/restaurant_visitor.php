@@ -24,6 +24,7 @@
     	</div>
 		</div>
 
+	<div id="text">You must Login to do a review</div>
 		
 	</body>
 </html>
