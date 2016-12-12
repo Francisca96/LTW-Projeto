@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-		
+
 	<head>
 		<title>Bloom</title>
     <meta charset="utf-8">
@@ -9,7 +9,7 @@
 	<body>
 		<header>
     	<div>
-				<input id="logReg" value="Login/Register" type="button"  onclick="window.location.href='../main.php';">
+				<input id="logReg" value="Login/Register" type="button"  onclick="window.location.href='main.php';">
 			</div>
 		</header>
 
@@ -19,7 +19,7 @@
     	<div id="restaurant">
 				<div id="name">Restaurant Name</div>
 		<!-- Fotos em slide show -->
-      	<img src="../images/kika.jpg">
+      	<img src="../images/kika.png">
         <div id="location">Location</div>
 				<div id="points">3</div>
 				<div id="reviews">Várias reviews....</div>

@@ -18,7 +18,7 @@
     	<div id="restaurant">
 		<div id="name">Restaurant Name</div>
 		<!-- Fotos em slide show -->
-      	<img src="../images/kika.jpg">
+      	<img src="../images/kika.png">
         <div id="location">Location</div>
 		<div id="points">3</div>
 		<div id="reviews">Várias reviews....</div>

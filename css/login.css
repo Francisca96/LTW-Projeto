@@ -7,8 +7,29 @@ body {
   text-align: center;
 }
 
-img#logo {
+#menu ul {
+	padding: 0px;
+	margin: 0px;
+	list-style: none;
+}
 
+#menu ul li {
+  display: inline;
+}
+
+#menu ul li a {
+	padding: 2px 10px;
+	display: inline-block;
+
+	color: black;
+	text-decoration: none;
+	border-bottom:3px solid #EDEDED;
+}
+
+#menu ul li a:hover {
+	background-color:#009ACD;
+	color: white;
+	border-bottom:3px solid white;
 }
 
 h1 {
@@ -18,8 +39,8 @@ h1 {
 }
 
 input#logout {
-  margin-top: 5px;
-  margin-left: 1200px;
+  /*margin-top: 5px;
+  margin-left: 1200px;*/
   border-radius: 14px;
   background-color: #009ACD;
   border: 3px solid #ffffff;

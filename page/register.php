@@ -25,6 +25,7 @@
         <input id="passwordConfirm" type="password" name="passwordConfirm" placeholder="Repeat your Password" required/>
       </p>
       <button type="submit">Submit</button>
+			<input type="button" value = "Login" id="loginBtn" onclick="window.location.href='main.php';">
     </form>
   </body>
 </html>
