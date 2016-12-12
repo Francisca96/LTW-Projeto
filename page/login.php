@@ -18,7 +18,7 @@
     <img src="../images/logo.png"/>
     <div id="middle-elements">
         <div id="search-bar">
-            <form action="" method="post">
+            <form action="restaurant_login.php" method="post">
                 <input id="searchLocal" type="text" name="local_search" placeholder="Pesquisar por local..."/>
                 <input id="searchRestaurant" type="text" name="restaurant_search" placeholder="Pesquisar por restaurante..."/>
                 <input type="submit" value="Search">
