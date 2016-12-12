@@ -16,7 +16,7 @@
 
 		<div id="middle">
     	<div id="profile">
-      	<img src="../images/kika.jpg">
+      	<img src="../images/kika.png">
 				<div id="type">Owner</div>
         <div id="name">Francisca Paupério</div>
         <div id="email">franciscapauperio@gmail.com</div>
@@ -32,7 +32,7 @@
         		<input id="password" type="password" name="password" placeholder="Actual Password" required/>
          		<input id="new_password" type="password" name="new_password" placeholder="New Password" required/>
          		<input id="new_password_confirm" type="password" name="new_password_confirm" placeholder="Repeat your new Password" required/>
-          	<input type="submit" value="Confirmar"/>
+          	<input type="submit" value="Confirm"/>
         	</form>
     	</div>
 		</div>
@@ -44,10 +44,10 @@
     	<div id="options">
 				<div id="title-options">Options</div>
       	<div id="edit">
-        	<input type="button" value="Editar">
+        	<input type="button" value="Edit">
       	</div>
     		<div>
-      		<input type="button" value="Criar restaurante">
+      		<input type="button" value="Create restaurant">
     		</div>
 			</div>
 		</div>
