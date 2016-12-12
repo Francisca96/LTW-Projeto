@@ -19,7 +19,7 @@
 			<input id="logout" value="Logout" type="button"  onclick="window.location.href='../page/visitor.php';">
 		</header> -->
 
-		<img src="../images/logo.png"/>
+		<img id="logo" src="../images/logo.png"/>
 		<h1>Expand your possibilities!</h1>
 		<div id="middle">
     	<div id="middle-elements">

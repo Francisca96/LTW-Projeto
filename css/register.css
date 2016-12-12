@@ -7,8 +7,23 @@ body {
   text-align: center;
 }
 
+#logo {
+  width: 400px;
+}
+
 h1 {
+  margin-top: -2%;
+  margin-bottom: 3%;
   color: white;
-  font-size: 50px;
+  font-size: 30px;
   font-weight: normal;
+  text-decoration: underline;
+}
+
+#owner {
+  margin-right: 15%;
+}
+
+#reviwer {
+  margin-left: 15%;
 }

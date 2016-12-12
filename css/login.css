@@ -7,6 +7,10 @@ body {
   text-align: center;
 }
 
+#logo {
+  width: 400px;
+}
+
 #menu ul {
 	padding: 0px;
 	margin: 0px;
