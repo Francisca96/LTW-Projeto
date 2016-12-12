@@ -29,8 +29,8 @@ input {
 }
 
 input#signUpBtn {
-  margin-top: 30px;
-  margin-right:5px;
+  margin-top: 2%;
+  margin-right: 0.5%;
   border-radius: 10px;
   background-color: #009ACD;
   border: 3px solid #ffffff;
@@ -41,8 +41,8 @@ input#signUpBtn {
 }
 
 input#loginBtn {
-  margin-bottom: 30px;
-  margin-left: 5px;
+  margin-bottom: 2%;
+  margin-left: 0.5%;
   border-radius: 10px;
   background-color: white;
   border: 3px solid #ffffff;
@@ -55,5 +55,5 @@ input#loginBtn {
 #visitor a {
   color: white;
   font-size: 17px;
-  padding-left: 130px;
+  padding-left: 10%;
 }
