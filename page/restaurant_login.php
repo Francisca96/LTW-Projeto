@@ -3,6 +3,7 @@
 	<head>
 		<title>Bloom</title>
     <meta charset="utf-8">
+		<link rel="stylesheet" href="../css/restaurant_login.css">
 	</head>
 	<body>
 		<header>
@@ -34,8 +35,8 @@
         <input id="review_text" type="text" wname="review_text" placeholder="Write your review here..." required/>
       </p>
       <button type="submit">Submit</button>
-      
+
     </form>
-		
+
 	</body>
 </html>

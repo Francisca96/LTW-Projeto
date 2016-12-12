@@ -3,7 +3,7 @@
 	<head>
 		<title>Bloom</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="../css/register.css">
 	</head>
 	<body>
     <!-- <script src=""></script> -->

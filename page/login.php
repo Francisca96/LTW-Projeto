@@ -1,31 +1,31 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Bloom</title>
+	<head>
+		<title>Bloom</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="../css/login.css">
-</head>
-<body>
-<header>
-    <div>
-			<!-- <!KIKA acrescenta sitio com o nome do utilizador mete 1 � sorte para depois se meter pela base de dados mas com href="profile.php" (para se carregar ir ao profile)> -->
-    </div>
-</header>
+	</head>
+	<body>
+		<header>
+    	<div>
+				<a id="username" href="profile.php">Francisca Paupério</a>
+    		<a id="logout">Log Out</a>
+				<input id="logout" value="Logout" type="button"  onclick="window.location.href='../page/visitor.php';">
+    	</div>
+		</header>
 
-<!-- <!Por bonito KIKA> -->
-
-<div id="middle">
-    <img src="../images/logo.png"/>
-    <div id="middle-elements">
-        <div id="search-bar">
-            <form action="" method="post">
-                <input id="searchLocal" type="text" name="local_search" placeholder="Pesquisar por local..."/>
-                <input id="searchRestaurant" type="text" name="restaurant_search" placeholder="Pesquisar por restaurante..."/>
-                <input type="submit" value="Search">
-            </form>
-        </div>
-    </div>
-</div>
-
-</body>
+		<img src="../images/logo.png"/>
+		<h1>Expand your possibilities!</h1>
+		<div id="middle">
+    	<div id="middle-elements">
+      	<div id="search-bar">
+        	<form action="restaurant_login.php" method="post">
+          	<input id="searchLocal" type="text" name="local_search" placeholder="Pesquisar por local..."/>
+          	<input id="searchRestaurant" type="text" name="restaurant_search" placeholder="Pesquisar por restaurante..."/>
+          	<input type="submit" value="Search">
+        	</form>
+				</div>
+    	</div>
+		</div>
+	</body>
 </html>
