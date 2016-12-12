@@ -1,6 +1,7 @@
 html {
   background-color: #009ACD;
   font-family: calibri;
+  font-size: 20px;
 }
 
 body {
@@ -12,6 +13,7 @@ body {
 }
 
 #menu ul {
+  text-align: left;
 	padding: 0px;
 	margin: 0px;
 	list-style: none;
@@ -24,10 +26,27 @@ body {
 #menu ul li a {
 	padding: 2px 10px;
 	display: inline-block;
+  position: fixed;
 
 	color: black;
 	text-decoration: none;
 	border-bottom:3px solid #EDEDED;
+}
+
+#menu ul li img {
+
+}
+
+#menu ul li input#logout {
+  position: fixed;
+  margin-left: 84%;
+  border-radius: 10px;
+  background-color: #009ACD;
+  border: 3px solid #ffffff;
+  font-size: 25px;
+  font-weight: 300;
+  color: white;
+  font-family: chalkboard;
 }
 
 #menu ul li a:hover {
@@ -40,18 +59,6 @@ h1 {
   font-size: 30px;
   font-weight: 100;
   color: black;
-}
-
-input#logout {
-  /*margin-top: 5px;
-  margin-left: 1200px;*/
-  border-radius: 14px;
-  background-color: #009ACD;
-  border: 3px solid #ffffff;
-  font-size: 25px;
-  font-weight: 300;
-  color: white;
-  font-family: chalkboard;
 }
 
 input#searchLocal {

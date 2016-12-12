@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="../css/login.css">
 	</head>
+
 	<nav id="menu">
 		<ul>
 			<li><img src="../images/kika.png"/></li>
@@ -12,13 +13,8 @@
 			<li><input id="logout" value="Logout" type="button"  onclick="window.location.href='../page/visitor.php';"></li>
 		</ul>
 	</nav>
-	<body>
-		<!-- <header>
-			<img src="../images/kika.png"/>
-			<a id="username" href="profile.php">Francisca Paupério</a>
-			<input id="logout" value="Logout" type="button"  onclick="window.location.href='../page/visitor.php';">
-		</header> -->
 
+	<body>
 		<img id="logo" src="../images/logo.png"/>
 		<h1>Expand your possibilities!</h1>
 		<div id="middle">
