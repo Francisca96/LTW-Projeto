@@ -20,7 +20,7 @@ h1 {
 input#logReg {
   margin-top: 5px;
   margin-left: 1200px;
-  border-radius: 14px;
+  border-radius: 10px;
   background-color: #009ACD;
   border: 3px solid #ffffff;
   font-size: 25px;
@@ -30,30 +30,30 @@ input#logReg {
 }
 
 input#searchLocal {
+  margin-right: 5px;
+  margin-top: 10px;
   background-color: white;
   background-position: 10px 10px;
   background-repeat: no-repeat;
   padding-left: 10px;
-  margin-right: 5px;
-  margin-top: 10px;
-  border-radius: 14px;
+  border-radius: 10px;
   font-size: 25px;
 }
 
 input#searchRestaurant {
+  margin-left: 5px;
   background-color: white;
   background-position: 10px 10px;
   background-repeat: no-repeat;
   padding-left: 10px;
-  margin-left: 5px;
-  border-radius: 14px;
+  border-radius: 10px;
   font-size: 25px;
 }
 
 input#searchBtn {
   margin-left: 15px;
   margin-bottom: 20px;
-  border-radius: 14px;
+  border-radius: 10px;
   background-color: white;
   border: 3px solid #ffffff;
   font-size: 20px;

@@ -27,7 +27,7 @@
         	<form action="restaurant_login.php" method="post">
           	<input id="searchLocal" type="text" name="local_search" placeholder="Pesquisar por local..."/>
           	<input id="searchRestaurant" type="text" name="restaurant_search" placeholder="Pesquisar por restaurante..."/>
-          	<input type="submit" value="Search">
+          	<input id="searchBtn" type="submit" value="Search">
         	</form>
 				</div>
     	</div>

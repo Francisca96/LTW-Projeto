@@ -26,9 +26,9 @@
 	<!-- Mudar a action para adicionar à base de dados -->
 		<form id="review" method="post" action="signup.php" onsubmit="return validateForm();">
       <h1>Your Review</h1>
-      <p>
-        <input id="rating" type="number" name="rating" min="1" max="5" required/>
-      </p>
+			<div class="rating">
+				<span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+			</div>
       <p>
         <input id="review_text" type="text" wname="review_text" placeholder="Write your review here..." required/>
       </p>
