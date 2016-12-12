@@ -8,11 +8,9 @@
 	<body>
 		<header>
     	<div>
-				<!-- KIKA acrescenta sitio com o nome do utilizador mete 1 À sorte para depois se meter pela base de dados -->
+
     	</div>
 		</header>
-
-		<!-- Por bonito KIKA nome maior e assim -->
 
 		<div id="middle">
     	<div id="profile">

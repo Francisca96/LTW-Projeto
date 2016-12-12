@@ -13,8 +13,6 @@
 			</div>
 		</header>
 
-		<!-- Por bonito KIKA nome maior e assim -->
-
 		<div id="middle">
     	<div id="restaurant">
 				<div id="name">Restaurant Name</div>

@@ -15,7 +15,7 @@
     </div>
     <div id="buttons">
       <input type="button" value="Sing up" id="signUpBtn"  onclick="window.location.href='register.php';">
-      <input type="button" value = "Login" id="loginBtn" onclick="window.location.href='login.php';">
+      <input type="button" value ="Login" id="loginBtn" onclick="window.location.href='login.php';">
     </div>
     <div id="visitor">
       <a href="visitor.php">Access as a visitor</a>

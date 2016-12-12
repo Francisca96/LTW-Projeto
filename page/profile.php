@@ -29,10 +29,7 @@
     	<div id="overlay-changePassword">
       	<div id="changePassword"></div>
         	<form id="form" method="post" action="../actions/change_password.php" onsubmit="return changePassword();">
-        		<input id="password" type="password" name="password" placeholder="Actual Password" required/>
-         		<input id="new_password" type="password" name="new_password" placeholder="New Password" required/>
-         		<input id="new_password_confirm" type="password" name="new_password_confirm" placeholder="Repeat your new Password" required/>
-          	<input type="submit" value="Confirm"/>
+        		<a id="password" href="profile_edit.php">Change password</a>
         	</form>
     	</div>
 		</div>
@@ -44,10 +41,10 @@
     	<div id="options">
 				<div id="title-options">Options</div>
       	<div id="edit">
-        	<input type="button" value="Edit">
+        	<input type="button" value="Edit" onclick="window.location.href='profile_edit.php';">
       	</div>
     		<div>
-      		<input type="button" value="Create restaurant" id="edit"  onclick="window.location.href='profile_edit.php';">
+      		<input type="button" value="Create restaurant">
     		</div>
 			</div>
 		</div>
