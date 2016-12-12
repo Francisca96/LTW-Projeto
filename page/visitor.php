@@ -19,7 +19,7 @@
 				<form action="restaurant_visitor.php" method="post" action="restaurant_visitor.php">
       		<input id="searchLocal" type="text" name="local_search" placeholder="Search by location..."/>
         	<input id="searchRestaurant" type="text" name="restaurant_search" placeholder="Search by restaurant..."/>
-			<input id="searchBtn" type="submit" value="Search">
+					<input id="searchBtn" type="submit" value="Search">
       	</form>
 			</div>
 		</div>

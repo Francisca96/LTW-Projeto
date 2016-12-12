@@ -8,8 +8,8 @@
 	<body>
 		<header>
     	<div>
+				<img src="../images/kika.png"/>
 				<a id="username" href="profile.php">Francisca Paupério</a>
-    		<a id="logout">Log Out</a>
 				<input id="logout" value="Logout" type="button"  onclick="window.location.href='../page/visitor.php';">
     	</div>
 		</header>
