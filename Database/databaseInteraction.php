@@ -9,6 +9,13 @@ function getUser($username){
     return $result;
 }
 
+function getUserInfo($username){
+  global $db;
+  $stmt = $db->prepare('SELECT * FROM user WHERE username = ?');
+  $stmt->execute(array($username));
+  return $stmt->fetch();
+}
+
 function putUser($username,$password,$name,$email,$gender, $type){
     global $db;
     $stmt = $db->prepare("INSERT INTO user VALUES(?,?,?,?,?,?)");
@@ -114,4 +121,12 @@ function getOwners($id_restaurant){
     $stmt->execute(array($id_restaurant));
     $result = $stmt->fetchAll();
     return $result;
+}
+
+function getPassword($username){
+  global $db;
+  $stmt = $db->prepare('SELECT password FROM user WHERE username = ?');
+  $stmt->execute(array($username));
+  $result = $stmt->fetch();
+  return $result[0];
 }
