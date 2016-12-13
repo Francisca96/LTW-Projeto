@@ -5,13 +5,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Bloom</title>
+    <title>AlaDine</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="../css/main.css">
   </head>
   <body>
     <img id="logo" src="../images/logo.png" height="150px" width="150px">
-    <div class="sitename">Bloom</a></div>
+    <div class="sitename">AlaDine</a></div>
     <form>
 		  <input class="username" type="text" id="username" required="required" placeholder="username"><br>
       <input class="password" type="password" id="password" required="required" placeholder="password"><br><br>
