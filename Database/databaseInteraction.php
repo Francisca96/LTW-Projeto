@@ -11,7 +11,7 @@ function getUser($username){
 
 function getUserInfo($username){
   global $db;
-  $stmt = $db->prepare('SELECT * FROM user WHERE username = ?');
+  $stmt = $db->prepare("SELECT * FROM user WHERE username = ?");
   $stmt->execute(array($username));
   return $stmt->fetch();
 }
@@ -125,8 +125,12 @@ function getOwners($id_restaurant){
 
 function getPassword($username){
   global $db;
-  $stmt = $db->prepare('SELECT password FROM user WHERE username = ?');
+  $stmt = $db->prepare("SELECT password FROM user WHERE username = ?");
   $stmt->execute(array($username));
   $result = $stmt->fetch();
   return $result[0];
 }
+
+echo getPassword('TiagoGrosso');
+
+?>

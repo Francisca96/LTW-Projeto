@@ -9,7 +9,6 @@ DROP TABLE IF EXISTS restaurant;
 DROP TABLE IF EXISTS restaurantImage;
 
 CREATE TABLE user (
-	id INTEGER PRIMARY KEY AUTOINCREMENT,
  	username TEXT PRIMARY KEY UNIQUE,
   	password TEXT,
   	name TEXT,
@@ -55,9 +54,9 @@ CREATE TABLE restaurantImage (
 	file_path TEXT
 );
 
-INSERT INTO user VALUES(NULL,'TiagoGrosso', '12345678', 'Tiago', 'tiagogrosso@gmail.com', 'Male', 'client');
-INSERT INTO user VALUES(NULL,'VascoVitoria', '87654321', 'Vasco', 'vasco@gmail.com', 'Male', 'owner');
-INSERT INTO user VALUES(NULL,'KikaPaupi', '24687531', 'Kika', 'kika@gmail.com', 'Female', 'client');
+INSERT INTO user VALUES('TiagoGrosso', '12345678', 'Tiago', 'tiagogrosso@gmail.com', 'Male', 'client');
+INSERT INTO user VALUES('VascoVitoria', '87654321', 'Vasco', 'vasco@gmail.com', 'Male', 'owner');
+INSERT INTO user VALUES('KikaPaupi', '24687531', 'Kika', 'kika@gmail.com', 'Female', 'client');
 
 INSERT INTO client VALUES('TiagoGrosso');
 INSERT INTO client VALUES('KikaPaupi');
