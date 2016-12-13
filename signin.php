@@ -1,22 +1,28 @@
 <?php
 
-//incluir php com as funçoes precisas
+  include_once('database/databaseInteraction.php');
+  include_once('database/connection.php');
 
-  $username=$_POST['username'];
-  $password=$_POST['password'];
+  $username=$_POST['Username'];
+  $password=$_POST['Password'];
+  $correctPass = getPassword($username);
 
-  //$validPass = getPassword($username, $password);
 
-  if ($validPass == $password){
-
+  if (strlen($username) != 0 && password_verify($password, $correctPass)){
+	
+	session_start();
+	
     $userInfo = getUserInfo($username);
 
-    //ver valores necessários de ir buscar
+    $_SESSION['username'] = $username;
+    $_SESSION['name'] = $userInfo['name'];
+    $_SESSION['id'] = $userInfo['id'];
 
-    //incluir php da pagina com login feito
+    header('Location: pages/login.php');
   }
   else{
-    include_once('login.php');
     echo "Username or Password incorrect";
+	
   }
+
 ?>
