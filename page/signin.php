@@ -1,7 +1,7 @@
 <?php
 
-  include_once('database/databaseInteraction.php');
-  include_once('database/connection.php');
+  include_once('../database/databaseInteraction.php');
+  include_once('../database/connection.php');
 
   $username=$_POST['Username'];
   $password=$_POST['Password'];
@@ -18,7 +18,7 @@
     $_SESSION['name'] = $userInfo['name'];
     $_SESSION['id'] = $userInfo['id'];
 
-    header('Location: pages/login.php');
+    header('Location: login.php');
   }
   else{
     echo "Username or Password incorrect";

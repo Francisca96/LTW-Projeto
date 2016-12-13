@@ -95,10 +95,10 @@ function putReview($id_restaurant, $username, $text, $value){
     $stmt->execute(array($id_restaurant, $username, $text, $value));
 }
 
-function putRestaurant($name,$location,$type){
+function putRestaurant($name,$location,$type,$description){
     global $db;
-    $stmt = $db->prepare("INSERT INTO restaurant VALUES(NULL,?,?,?)");
-    $stmt->execute(array($name,$location,$type));
+    $stmt = $db->prepare("INSERT INTO restaurant VALUES(NULL,?,?,?,?)");
+    $stmt->execute(array($name,$location,$type,$description));
 }
 
 function getRestaurantByName($name){
@@ -129,6 +129,12 @@ function getPassword($username){
   $stmt->execute(array($username));
   $result = $stmt->fetch();
   return $result[0];
+}
+
+function changeUserPassword($username,$newPassword){
+  global $db;
+  $stmt = $db->prepare('UPDATE user SET password = ? WHERE username = ?');
+	return $stmt->execute(array($newPassword, $username));
 }
 
 echo getPassword('TiagoGrosso');
