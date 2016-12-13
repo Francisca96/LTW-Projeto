@@ -5,7 +5,26 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="../css/reg_owner.css">
 	</head>
+
 	<body>
+		<table class="logo">
+			<caption style="color:white; font-size:20px; font-weight:lighter;" align="bottom">Bloom</caption>
+			<tr><td><a href="visitor.php"><img src="../images/logo_white.png" alt="owner" height="70px" width="70px"></a></td></tr>
+		</table>
+		<header>
+    	<nav id="menu">
+				<ul>
+					<li><a href="register.php">Sign up</a></li>
+  				<li id="logReg"><a href="main.php">Login</a></li>
+				</ul>
+    	</nav><br>
+		</header>
+
+		<table class="owner">
+			<caption align="bottom"><input type="checkbox" name="user" value="Owner">Owner</caption>
+			<tr><td><a href="reg_owner.php"><img src="../images/owner.png" alt="owner" height="110px" width="120px"></a></td></tr>
+		</table>
+
     <!-- <script src=""></script> -->
     <form id="form" method="post" action="signup.php" onsubmit="return validateForm();">
       <h1>Sign up:</h1>

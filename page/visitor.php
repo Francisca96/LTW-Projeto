@@ -5,14 +5,21 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="../css/visitor.css">
 	</head>
+
 	<body>
+		<table class="logo">
+			<caption style="color:white; font-size:20px; font-weight:lighter;" align="bottom">Bloom</caption>
+			<tr><td><a href="visitor.php"><img src="../images/logo_white.png" alt="owner" height="70px" width="70px"></a></td></tr>
+		</table>
 		<header>
-    	<div>
-				<input id="logReg" value="Login/Register" type="button"  onclick="window.location.href='../page/main.php';">
-    	</div>
+    	<nav id="menu">
+				<ul>
+					<li><a>Visitor</a></li>
+  				<li style="float:right; background-color:gray;"><a href="main.php">Login/Register</a></li>
+				</ul>
+    	</nav><br>
 		</header>
 
-		<img id= "logo" src="../images/logo.png"/>
 		<h1>Expand your possibilities!</h1>
     <div id="middle-elements">
   		<div id="search-bar">

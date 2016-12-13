@@ -7,14 +7,26 @@
 	</head>
 
 	<body>
-		<img id="logo" src="../images/logo.png"/>
-		<h1>Sign up as:</h1>
-  	<input type="image" id="owner" src="../images/owner.png" onclick="window.location.href='reg_owner.php';">
-		<input type="image" id="reviewer" src="../images/reviewer.png" onclick="window.location.href='reg_reviewer.php';">
+		<table class="logo">
+			<caption style="color:white; font-size:20px; font-weight:lighter;" align="bottom">Bloom</caption>
+			<tr><td><a href="visitor.php"><img src="../images/logo_white.png" alt="owner" height="70px" width="70px"></a></td></tr>
+		</table>
+		<header>
+    	<nav id="menu">
+				<ul>
+					<li><a>Sign up</a></li>
+  				<li id="logReg"><a href="main.php">Login</a></li>
+				</ul>
+    	</nav><br>
+		</header>
 
-		<div>
-			<h1>Owner</h1>
-			<h1>Reviewer</h1>
-		</div>
+		<table class="owner">
+			<caption align="bottom"><input type="checkbox" name="user" value="Owner">Owner</caption>
+			<tr><td><a href="reg_owner.php"><img src="../images/owner.png" alt="owner" height="110px" width="120px"></a></td></tr>
+		</table>
+		<table class="reviewer">
+			<caption align="bottom"><input type="checkbox" name="user" value="Reviewer">Reviewer</caption>
+			<tr><td><a href="reg_reviewer.php"><img src="../images/reviewer.png" alt="reviewer" height="110px" width="120px"></a></td></tr>
+		</table>
   </body>
 </html>

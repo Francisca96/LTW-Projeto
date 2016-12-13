@@ -6,19 +6,14 @@
     <link rel="stylesheet" href="../css/main.css">
   </head>
   <body>
-    <img src="../images/bloom_main.png" alt="Site Logo">
-    <div id="username">
-		  <input type="text" name="username" placeholder="username">
-    </div>
-    <div id="password">
-      <input type="password" name="password" placeholder="password">
-    </div>
-    <div id="buttons">
-      <input type="button" value="Sing up" id="signUpBtn"  onclick="window.location.href='register.php';">
-      <input type="button" value ="Login" id="loginBtn" onclick="window.location.href='login.php';">
-    </div>
-    <div id="visitor">
-      <a href="visitor.php">Access as a visitor</a>
-    </div>
+    <img id="logo" src="../images/logo.png" height="150px" width="150px">
+    <div class="sitename">Bloom</a></div>
+    <form>
+		  <input class="username" type="text" id="username" required="required" placeholder="username"><br>
+      <input class="password" type="password" id="password" required="required" placeholder="password"><br><br>
+      <input id="signUpBtn" type="button" value="Sign up" onclick="window.location.href='register.php';">
+      <input id="loginBtn" type="button" value ="Login" onclick="window.location.href='login.php';"><br><br><br>
+      <a id="visitor" href="visitor.php">Access as a visitor</a>
+    </form>
   </body>
 </html>

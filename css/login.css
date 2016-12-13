@@ -1,95 +1,64 @@
+html, body {
+  height: 110%;
+  width: 60%;
+	font-family: raleway;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+  background-position: center;
+  padding: 0;
+}
+
 html {
-  background-color: #009ACD;
-  font-family: calibri;
-  font-size: 20px;
+  background-image: url("../images/background.png");
+  display: table;
+  margin: auto;
 }
 
 body {
+  width:100%;
+  height:100%;
+  background-color: #8B3E2F;
+  display: table-cell;
   text-align: center;
 }
 
-#logo {
-  width: 400px;
+header {
+  top: -10px;
+  position: fixed;
+  width: 53%;
+  padding-left: 7%;
+}
+
+.logo {
+  margin-left: 1%;
 }
 
 #menu ul {
-  text-align: left;
-	padding: 0px;
-	margin: 0px;
-	list-style: none;
+  list-style-type: none;
+  padding: 0;
+  overflow: hidden;
+  background-color: #8B3E2F;
+  border-bottom: 1px solid white;
 }
 
-#menu ul li {
+#menu li {
   display: inline;
+  float: left;
 }
 
-#menu ul li a {
-	padding: 2px 10px;
-	display: inline-block;
-  position: fixed;
-
-	color: black;
-	text-decoration: none;
-	border-bottom:3px solid #EDEDED;
-}
-
-#menu ul li img {
-
-}
-
-#menu ul li input#logout {
-  position: fixed;
-  margin-left: 84%;
-  border-radius: 10px;
-  background-color: #009ACD;
-  border: 3px solid #ffffff;
-  font-size: 25px;
-  font-weight: 300;
-  color: white;
-  font-family: chalkboard;
-}
-
-#menu ul li a:hover {
-	background-color:#009ACD;
-	color: white;
-	border-bottom:3px solid white;
-}
-
-h1 {
-  font-size: 30px;
-  font-weight: 100;
+#menu li a {
+  display: block;
+  padding: 8px;
   color: black;
+  text-decoration: none;
+  font-size: 18px;
 }
 
-input#searchLocal {
-  background-color: white;
-  background-position: 10px 10px;
-  background-repeat: no-repeat;
-  padding-left: 10px;
-  margin-right: 5px;
-  margin-top: 10px;
-  border-radius: 10px;
-  font-size: 25px;
+#menu li a:hover {
+    background-color: #CD5B45;
 }
 
-input#searchRestaurant {
-  background-color: white;
-  background-position: 10px 10px;
-  background-repeat: no-repeat;
-  padding-left: 10px;
-  margin-left: 5px;
-  border-radius: 10px;
-  font-size: 25px;
-}
-
-input#searchBtn {
-  margin-left: 15px;
-  margin-bottom: 20px;
-  border-radius: 10px;
-  background-color: white;
-  border: 3px solid #ffffff;
-  font-size: 20px;
-  font-weight: bold;
-  color: #009ACD;
-  font-family: chalkboard;
+#menu li#logReg {
+  float: right;
+  background-color: gray;
 }

@@ -5,14 +5,20 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="../css/profile.css">
 	</head>
-	<body>
-		<header>
-    	<div>
-				<!-- KIKA acrescenta sitio com o nome do utilizador mete 1 À sorte para depois se meter pela base de dados -->
-    	</div>
-		</header>
 
-		<!-- Por bonito KIKA nome maior e assim -->
+	<body>
+		<table class="logo">
+			<caption style="color:white; font-size:20px; font-weight:lighter;" align="bottom">Bloom</caption>
+			<tr><td><a href="visitor.php"><img src="../images/logo_white.png" alt="owner" height="70px" width="70px"></a></td></tr>
+		</table>
+		<header>
+			<nav id="menu">
+				<ul>
+					<li><a href="profile.php">Francisca Paupério</a></li>
+					<li style="float:right; background-color:gray;"><a href="visitor.php">Logout</a></li>
+				</ul>
+			</nav><br>
+		</header>
 
 		<div id="middle">
     	<div id="profile">
