@@ -21,8 +21,7 @@
 		</header>
 
 		<table class="reviewer">
-			<caption align="bottom"><input type="checkbox" name="user" value="Reviewer">Reviewer</caption>
-			<tr><td><a href="reg_reviewer.php"><img src="../images/reviewer.png" alt="reviewer" height="110px" width="120px"></a></td></tr>
+			<tr><td><a><img src="../images/reviewer.png" alt="reviewer" height="110px" width="120px"></a></td></tr>
 		</table>
 
     <!-- <script src=""></script> -->

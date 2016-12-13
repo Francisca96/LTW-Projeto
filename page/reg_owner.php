@@ -21,8 +21,7 @@
 		</header>
 
 		<table class="owner">
-			<caption align="bottom"><input type="checkbox" name="user" value="Owner">Owner</caption>
-			<tr><td><a href="reg_owner.php"><img src="../images/owner.png" alt="owner" height="110px" width="120px"></a></td></tr>
+			<tr><td><a><img src="../images/owner.png" alt="owner" height="110px" width="120px"></a></td></tr>
 		</table>
 
     <!-- <script src=""></script> -->
