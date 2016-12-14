@@ -8,9 +8,9 @@
 	<script type="text/javascript" src="../scripts/test.js"></script>
   </head>
   <body>
-    
+
 	<a class="btn" data-popup-open="popup-1" href="#">Open Popup #1</a>
- 
+
 	<div class="popup" data-popup="popup-1">
 		<div class="popup-inner">
 			<h2>Wow! This is Awesome! (Popup #1)</h2>
@@ -19,7 +19,7 @@
 			<a class="popup-close" data-popup-close="popup-1" href="#">x</a>
 		</div>
 	</div>
-	
-	
+
+
   </body>
 </html>
