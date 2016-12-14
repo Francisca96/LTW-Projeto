@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <?php
 session_start();
 ?>
@@ -7,7 +6,7 @@ session_start();
 include_once('../database/databaseInteraction.php');
 
 function calculateScore($restaurant_id) {
-	
+
 	$reviews = getRestaurantReviews($restaurant_id);
 	$count = 0;
 	$score = 0;
@@ -17,7 +16,7 @@ function calculateScore($restaurant_id) {
 	}
 	$media = $score/$count;
 	return $media;
-    
+
 }
 
 
@@ -53,11 +52,11 @@ else if($restauranttmplocation != NULL)
 	{
 	header('Location: login.php');
 	}
-	
 
-	
+
+
 ?>
-
+<!DOCTYPE html>
 <html>
 	<head>
 		<title>AlaDine</title>
@@ -88,7 +87,7 @@ else if($restauranttmplocation != NULL)
 		<div id="type"><?php echo 'Type: '.$restaurant_type ?></div>
 		<div id="description"><?php echo 'Description: '.$restaurant_description ?></div>
 		<div id="points"><?php echo 'Score: '.$restaurant_score ?></div>
-		
+
 			<form id="review" method="post" action="makereview.php?id=<?php echo $restaurant_id?>" onsubmit="return validateForm();">
 				<h1>Your Review</h1>
 				<div class="rating">
@@ -103,7 +102,7 @@ else if($restauranttmplocation != NULL)
 				<button type="submit">Submit</button>
 
 			</form>
-		
+
 		<div id="reviews">
 		<?php
 			for($i = 0; $i < sizeof($restaurant_reviews); $i++){

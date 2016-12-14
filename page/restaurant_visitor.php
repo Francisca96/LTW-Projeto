@@ -1,10 +1,9 @@
-<!DOCTYPE html>
 <?php
 
 include_once('../database/databaseInteraction.php');
 
 function calculateScore($restaurant_id) {
-	
+
 	$reviews = getRestaurantReviews($restaurant_id);
 	$count = 0;
 	$score = 0;
@@ -14,7 +13,7 @@ function calculateScore($restaurant_id) {
 	}
 	$media = $score/$count;
 	return $media;
-    
+
 }
 
 
@@ -50,10 +49,9 @@ else if($restauranttmplocation != NULL)
 	{
 	header('Location: visitor.php');
 	}
-	
-
-	
 ?>
+
+<!DOCTYPE html>
 <html>
 
 	<head>

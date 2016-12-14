@@ -1,7 +1,7 @@
 
-<!-- <?php
+<?php
 	session_start();
-?> -->
+?>
 
 <!DOCTYPE html>
 <html>
@@ -15,18 +15,18 @@
   <body>
     <img id="logo" src="../images/logo.png" height="150px" width="150px">
     <div class="sitename">AlaDine</a></div>
-	
+
 	<div class="userBtns">
 
 	<a class="loginBtn" data-popup-open="popup-1" href="#">Sign In</a>
 	<a class="loginBtn" data-popup-open="popup-2" href="#">Register</a>
- 
+
 	</div>
 
 	<div class="guestBtn">
 		<a class="loginBtn" href="../page/visitor.php"> Enter as Guest</a>
 	</div>
-	
+
 	<div class="popup" data-popup="popup-1">
 		<div class="popup-inner">
 		<form action="../page/signin.php" method="post">
@@ -34,14 +34,14 @@
 			<input class="inputField" type="password" id="password" name="password" required="required" placeholder="Enter Password"><br><br>
 			<input id="submit" type="submit" value ="Submit">
 		</form>
-		
+
 		<a class="popup-close" data-popup-close="popup-1" href="#">x</a>
 		</div>
 	</div>
-	
+
 	<div class="popup" data-popup="popup-2">
 		<div class="popup-inner">
-		<form action="../page/signup.php" onsubmit="return validate(this);" method="post"> 
+		<form action="../page/signup.php" onsubmit="return validate(this);" method="post">
 			<input class="inputField" type="text" id="name" name="name" required="required" placeholder="Your Name"><br>
 			<input class="inputField" type="email" id="email" name="email" required="required" placeholder="Your Email"><br><br>
 			<input class="inputField" type="text" id="username" name="username" maxlength="15" required="required" placeholder="Your Username"><br><br>
@@ -60,12 +60,12 @@
 			</fieldset>
 			<input id="submit" type="submit" value ="Submit">
 		</form>
-		
+
 		<a class="popup-close" data-popup-close="popup-2" href="#">x</a>
 		</div>
 	</div>
-	
 
-    
+
+
   </body>
 </html>
