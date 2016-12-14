@@ -9,17 +9,11 @@ $email=$_POST['email'];
 $gender=$_POST['gender'];
 $password=$_POST['password'];
 $passwordConfirmed=$_POST['passwordConfirm'];
-$type="client";
+$type=$_POST['type'];
 
 
 
 if($name && $username && $email && $gender && $password && $passwordConfirmed){
-
-	if(strlen($password)<8){
-        include_once('register.php');
-        echo 'Password is too short. Please choose a new one.';
-        return;
-  }
 
   if($password!==$passwordConfirmed){
         include_once('register.php');

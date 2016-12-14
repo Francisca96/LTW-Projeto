@@ -1,3 +1,16 @@
+function validate(form) {
+  var e = form.elements;
+
+  /* Your validation code. */
+
+  if(e['password'].value != e['passwordConfirm'].value) {
+    document.getElementById("passwordConfirm").setCustomValidity("Passwords Don't Match");
+    return false;
+  }
+  return true;
+}
+
+
 $(function() {
     //----- OPEN
     $('[data-popup-open]').on('click', function(e)  {
@@ -15,3 +28,4 @@ $(function() {
         e.preventDefault();
     });
 });
+

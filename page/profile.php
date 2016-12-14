@@ -1,10 +1,11 @@
+<!DOCTYPE html>
 <?php
 
 include_once('../database/databaseInteraction.php');
 
 session_start();
+
 ?>
-<!DOCTYPE html>
 <html>
 	<head>
 		<title>AlaDine</title>
