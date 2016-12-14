@@ -104,14 +104,21 @@ function putRestaurant($name,$location,$type,$description){
     global $db;
     $stmt = $db->prepare("INSERT INTO restaurant VALUES(NULL,?,?,?,?)");
     $stmt->execute(array($name,$location,$type,$description));
+	return $stmt->errorCode();	
 }
 
 function getRestaurantByName($name){
-    global $db;
-    $stmt = $db->prepare("SELECT * FROM restaurant WHERE name = ?");
-    $stmt->execute(array($name));
-    $result = $stmt->fetchAll();
-    return $result;
+  global $db;
+  $stmt = $db->prepare("SELECT * FROM restaurant WHERE name = ?");
+  $stmt->execute(array($name));
+  return $stmt->fetch();
+}
+
+function getRestaurantByLocation($location){
+  global $db;
+  $stmt = $db->prepare("SELECT * FROM restaurant WHERE location = ?");
+  $stmt->execute(array($location));
+  return $stmt->fetch();
 }
 
 function addOwner($id_restaurant, $username){
