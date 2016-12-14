@@ -1,4 +1,11 @@
 <!DOCTYPE html>
+<?php
+
+include_once('../database/databaseInteraction.php');
+
+session_start();
+
+?>
 <html>
 	<head>
 		<title>AlaDine</title>
@@ -14,7 +21,7 @@
 		<header>
 			<nav id="menu">
 				<ul>
-					<li><a href="profile.php">Francisca Paupério</a></li>
+					<li><a href="profile.php"><?php echo $_SESSION['name']?></a></li>
 					<li style="float:right; background-color:gray;"><a href="visitor.php">Logout</a></li>
 				</ul>
 			</nav><br>
@@ -23,9 +30,9 @@
 		<div id="middle">
     	<div id="profile">
       	<img src="../images/kika.png">
-				<div id="type">Owner</div>
-        <div id="name">Francisca Paupério</div>
-        <div id="email">franciscapauperio@gmail.com</div>
+				<div id="type"><?php echo getUserInfo($_SESSION['username'])['user_type']?></div>
+        <div id="name"><?php echo getUserInfo($_SESSION['username'])['name']?></div>
+        <div id="email"><?php echo getUserInfo($_SESSION['username'])['email']?></div>
     	</div>
 		</div>
 
@@ -50,7 +57,7 @@
         	<input type="button" value="Edit" onclick="window.location.href='profile_edit.php';">
       	</div>
     		<div>
-      		<input type="button" value="Create restaurant">
+      		<input type="button" value="Create restaurant" onclick="window.location.href='addRestaurant.php';">
     		</div>
 			</div>
 		</div>

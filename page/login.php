@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<?php
+session_start();
+?>
 <html>
 	<head>
 		<title>AlaDine</title>
@@ -14,7 +17,7 @@
 		<header>
 			<nav id="menu">
 				<ul>
-					<li><a href="profile.php">Francisca Paupério</a></li>
+					<li><a href="profile.php"><?php echo $_SESSION['name']?></a></li>
 					<li style="float:right; background-color:gray;"><a href="visitor.php">Logout</a></li>
 				</ul>
 			</nav><br>

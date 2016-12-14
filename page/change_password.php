@@ -11,7 +11,7 @@
 	
 	
     if(password_verify($actual_password, $correctPass)){
-      $newPassword = $_POST['newpassword'];
+      $newPassword = $_POST['new_password'];
 	  
       $confNewPassword = $_POST['new_password_confirm'];
 	  
@@ -24,7 +24,7 @@
 		
         $newPass = password_hash($newPassword, PASSWORD_DEFAULT);
 		
-        if (changeUserPassword($_SESSION['email'],$newPass) == 1){
+        if (changeUserPassword($_SESSION['username'],$newPass) == 1){
           header('Location: profile.php');
         }
         else{

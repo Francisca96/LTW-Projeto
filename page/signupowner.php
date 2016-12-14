@@ -9,7 +9,7 @@ $email=$_POST['email'];
 $gender=$_POST['gender'];
 $password=$_POST['password'];
 $passwordConfirmed=$_POST['passwordConfirm'];
-$type="client"
+$type="owner";
 
 
 
@@ -27,9 +27,9 @@ if($name && $username && $email && $gender && $password && $passwordConfirmed){
         return;
   }
 
-	//$pass = password_hash($password, PASSWORD_DEFAULT);
+	$pass = password_hash($password, PASSWORD_DEFAULT);
 	
-  if(putUser($username,$password,$name,$email,$gender, $type)==0){
+  if(putUser($username,$pass,$name,$email,$gender, $type)==0){
     
 	session_start();
 	

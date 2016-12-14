@@ -34,7 +34,7 @@
 		<div class="overlayChangePassword">
     	<div id="overlay-changePassword">
       	<div id="changePassword"></div>
-        	<form id="form" method="post" action="../actions/change_password.php" onsubmit="return changePassword();">
+        	<form id="form" method="post" action="../page/change_password.php" onsubmit="return changePassword();">
         		<input id="password" type="password" name="password" placeholder="Actual Password" required/>
          		<input id="new_password" type="password" name="new_password" placeholder="New Password" required/>
          		<input id="new_password_confirm" type="password" name="new_password_confirm" placeholder="Repeat your new Password" required/>
