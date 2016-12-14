@@ -9,7 +9,7 @@ $email=$_POST['email'];
 $gender=$_POST['gender'];
 $password=$_POST['password'];
 $passwordConfirmed=$_POST['passwordConfirm'];
-$type="owner";
+$type="client"
 
 
 
@@ -38,9 +38,7 @@ if($name && $username && $email && $gender && $password && $passwordConfirmed){
     $_SESSION['username'] = $username;
     $_SESSION['name'] = $userInfo['name'];
 
-
-	   header('Location: login.php');
-
+	header('Location: ../page/login.php');
   }
   else {
     echo 'Invalid account. Username already exists.';

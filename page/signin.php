@@ -1,7 +1,7 @@
 <?php
 
-  include_once('../database/databaseInteraction.php');
   include_once('../database/connection.php');
+  include_once('../database/databaseInteraction.php');
 
   $username=$_POST['Username'];
   $password=$_POST['Password'];

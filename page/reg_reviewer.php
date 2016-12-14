@@ -25,16 +25,19 @@
 		</table>
 
     <!-- <script src=""></script> -->
-    <form id="form" method="post" action="signup.php" onsubmit="return validateForm();">
+    <form id="form" method="post" action="signupclient.php" onsubmit="return validateForm();">
       <h1>Sign up:</h1>
       <p>
-        <input id="firstName" type="text" name="firstName" placeholder="First name" required/>
+        <input id="name" type="text" name="name" placeholder="Name" required/>
       </p>
       <p>
-        <input id="lastName" type="text" name="lastName" placeholder="Last name" required/>
+        <input id="email" type="email" name="email" placeholder="Email" required/>
       </p>
 	    <p>
         <input id="username" type="text" name="username" placeholder="Username" required/>
+      </p>
+	  <p>
+        <input id="gender" type="text" name="gender" placeholder="Gender" required/>
       </p>
       <p>
         <input id="password" type="password" name="password" placeholder="Password" required/>
@@ -42,8 +45,7 @@
       <p>
         <input id="passwordConfirm" type="password" name="passwordConfirm" placeholder="Repeat your Password" required/>
       </p>
-      <button type="submit">Submit</button>
-			<input type="button" value = "Login" id="loginBtn" onclick="window.location.href='main.php';">
+		<button type="submit">Submit</button>
     </form>
   </body>
 </html>

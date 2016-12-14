@@ -1,5 +1,5 @@
 <?php
-include_once('connection.php');
+include_once('../database/connection.php');
 
 function getUser($username){
     global $db;
@@ -20,9 +20,14 @@ function putUser($username,$password,$name,$email,$gender, $type){
     global $db;
     $stmt = $db->prepare("INSERT INTO user VALUES(?,?,?,?,?,?)");
     $stmt->execute(array($username,$password,$name,$email,$gender,$type));
-
-    $stmt2 = $db->prepare("INSERT INTO ? VALUES(?)");
-    $stmt2->execute(array($type, $username));
+	
+	if($type == "client")
+		$stmt2 = $db->prepare("INSERT INTO client VALUES(?)");
+	else 
+		$stmt2 = $db->prepare("INSERT INTO owner VALUES(?)");
+	
+    $stmt2->execute(array($username));
+	return $stmt2->errorCode();
 }
 
 function getAllUsers(){
@@ -136,7 +141,5 @@ function changeUserPassword($username,$newPassword){
   $stmt = $db->prepare('UPDATE user SET password = ? WHERE username = ?');
 	return $stmt->execute(array($newPassword, $username));
 }
-
-echo getPassword('TiagoGrosso');
 
 ?>
