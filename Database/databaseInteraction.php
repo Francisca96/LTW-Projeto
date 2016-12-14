@@ -150,7 +150,7 @@ function changeUserPassword($username,$newPassword){
 	return $stmt->execute(array($newPassword, $username));
 }
 
-function changeUserPassword($username,$newEmail){
+function changeUserEmail($username,$newEmail){
   global $db;
   $stmt = $db->prepare('UPDATE user SET email = ? WHERE username = ?');
   return $stmt->execute(array($newEmail, $username));
@@ -161,4 +161,5 @@ function changeUserName($username,$newName){
   $stmt = $db->prepare('UPDATE user SET name = ? WHERE username = ?');
   return $stmt->execute(array($newName, $username));
 }
+
 ?>
