@@ -98,6 +98,7 @@ function putReview($id_restaurant, $username, $text, $value){
     global $db;
     $stmt = $db->prepare("INSERT INTO review VALUES(NULL,?,?,?,?)");
     $stmt->execute(array($id_restaurant, $username, $text, $value));
+	return $stmt->errorCode();	
 }
 
 function putRestaurant($name,$location,$type,$description){

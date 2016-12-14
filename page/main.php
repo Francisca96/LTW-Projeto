@@ -16,9 +16,17 @@
     <img id="logo" src="../images/logo.png" height="150px" width="150px">
     <div class="sitename">AlaDine</a></div>
 	
+	<div class="userBtns">
+
 	<a class="loginBtn" data-popup-open="popup-1" href="#">Sign In</a>
 	<a class="loginBtn" data-popup-open="popup-2" href="#">Register</a>
  
+	</div>
+
+	<div class="guestBtn">
+		<a class="loginBtn" href="../page/visitor.php"> Enter as Guest</a>
+	</div>
+	
 	<div class="popup" data-popup="popup-1">
 		<div class="popup-inner">
 		<form action="../page/signin.php" method="post">
@@ -33,13 +41,18 @@
 	
 	<div class="popup" data-popup="popup-2">
 		<div class="popup-inner">
-		<form action="../page/signin.php" method="post">
-			<input class="inputField" type="text" id="username" name="name" required="required" placeholder="Your First and Last Name"><br>
-			<input class="inputField" type="text" id="password" name="email" required="required" placeholder="Your Email"><br><br>
-			<input class="inputField" type="text" id="password" name="username" required="required" placeholder="Your Username"><br><br>
-			<input class="inputField" type="text" id="password" name="gender" required="required" placeholder="Your Gender"><br><br>
+		<form action="../page/signin.php" method="post"> 
+			<input class="inputField" type="text" id="name" name="name" required="required" placeholder="Your Name"><br>
+			<input class="inputField" type="email" id="email" name="email" required="required" placeholder="Your Email"><br><br>
+			<input class="inputField" type="text" id="username" name="username" required="required" placeholder="Your Username"><br><br>
+			<fieldset name="gender">
+				<legend> Your Gender </legend>
+				<input type="radio" name="gender" value="male" checked> Male<br>
+				<input type="radio" name="gender" value="female"> Female<br>
+				<input type="radio" name="gender" value="other"> Other
+			</fieldset>
 			<input class="inputField" type="password" id="password" name="password" required="required" placeholder="Enter Password"><br><br>
-			<input class="inputField" type="password" id="passwordConfirm" name="password" required="required" placeholder="Confirm Password"><br><br>
+			<input class="inputField" type="password" id="passwordConfirm" name="passwordConfirm" required="required" placeholder="Confirm Password"><br><br>
 			<input id="submit" type="submit" value ="Submit">
 		</form>
 		
