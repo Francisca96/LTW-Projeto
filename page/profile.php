@@ -29,14 +29,21 @@ session_start();
 
 		<div id="middle">
     	<div id="profile">
-      	<img src="../images/kika.png">
-				<div id="type"><?php echo getUserInfo($_SESSION['username'])['user_type']?></div>
+      	
+			<?php if(getUserInfo($_SESSION['username'])['gender'] == "female"){?>
+			<img src="../images/woman.png">
+			<?php
+			}else{?>
+			<img src="../images/man.png">
+			<?php
+			}
+			?>
+		
+		<div id="type"><?php echo getUserInfo($_SESSION['username'])['user_type']?></div>
         <div id="name"><?php echo getUserInfo($_SESSION['username'])['name']?></div>
         <div id="email"><?php echo getUserInfo($_SESSION['username'])['email']?></div>
     	</div>
 		</div>
-
-<!-- Meter funçao changePassword -->
 
 		<div class="overlayChangePassword">
     	<div id="overlay-changePassword">

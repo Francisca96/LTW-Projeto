@@ -1,8 +1,6 @@
-
 <?php
 	session_start();
 ?>
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -56,7 +54,7 @@
 			<fieldset name="gender">
 				<legend> User Type </legend>
 				<input type="radio" name="type" value="owner" checked>Owner<br>
-				<input type="radio" name="type" value="female">Reviewer<br>
+				<input type="radio" name="type" value="client">Reviewer<br>
 			</fieldset>
 			<input id="submit" type="submit" value ="Submit">
 		</form>
