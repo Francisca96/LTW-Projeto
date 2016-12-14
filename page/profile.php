@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <?php
 
 include_once('../database/databaseInteraction.php');
@@ -6,6 +5,7 @@ include_once('../database/databaseInteraction.php');
 session_start();
 
 ?>
+<!DOCTYPE html>
 <html>
 	<head>
 		<title>AlaDine</title>
@@ -29,7 +29,7 @@ session_start();
 
 		<div id="middle">
     	<div id="profile">
-      	
+
 			<?php if(getUserInfo($_SESSION['username'])['gender'] == "female"){?>
 			<img src="../images/woman.png">
 			<?php
@@ -38,7 +38,7 @@ session_start();
 			<?php
 			}
 			?>
-		
+
 		<div id="type"><?php echo getUserInfo($_SESSION['username'])['user_type']?></div>
         <div id="name"><?php echo getUserInfo($_SESSION['username'])['name']?></div>
         <div id="email"><?php echo getUserInfo($_SESSION['username'])['email']?></div>
