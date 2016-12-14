@@ -74,28 +74,35 @@ else if($restauranttmplocation != NULL)
 			</nav><br>
 		</header>
 
-		<div id="middle">
-    	<div id="restaurant">
-			<div id="name"><?php echo $restaurant_name ?></div>
-				<!-- Fotos em slide show -->
-      	<img src="../images/kika.png">
-        <div id="location"><?php echo 'Location: '.$restaurant_location ?></div>
-		<div id="type"><?php echo 'Type: '.$restaurant_type ?></div>
-		<div id="description"><?php echo 'Description: '.$restaurant_description ?></div>
-		<div id="points"><?php echo 'Score: '.$restaurant_score ?></div>
-		<div id="reviews">
-		<?php
-			for($i = 0; $i < sizeof($restaurant_reviews); $i++){
+
+			<div id="name"><?php echo $restaurant_name ?></div><br><br>
+			<div id="restaurant">
+				<div>
+      		<img src="../images/restaurant.png" id="image">
+				</div>
+				<div id="bi">
+        	<li><div id="location"><?php echo 'Location: '.$restaurant_location ?></div></li>
+					<li><div id="type"><?php echo 'Type: '.$restaurant_type ?></div></li>
+					<li><div id="description"><?php echo 'Description: '.$restaurant_description ?></div></li>
+					<li><div id="points"><?php echo 'Score: '.$restaurant_score ?></div></li>
+				</div>
+			</div><br><br>
+
+			<div id="text">You must <a href="main.php">login</a> to do a review</div>
+
+			<div id="reviews">
+			<?php
+				for($i = 0; $i < sizeof($restaurant_reviews); $i++){
 			?>
-			<div id="review_username"><?php echo 'Username: '.$restaurant_reviews[$i]['username']?></div>
-			<div id="review_value"><?php echo 'Score: '.$restaurant_reviews[$i]['value'] ?></div>
-			<div id="review_text"><?php echo 'Review: '.$restaurant_reviews[$i]['text'] ?></div>
-		<?php
-			}
-		?>
-		</div>
-    	</div>
-		</div>
-		<div id="text">You must Login to do a review</div>
+				<div id="oneReview">
+					<div id="review_username"><?php echo $restaurant_reviews[$i]['username']?></div>
+					<div id="review_value"><?php echo 'Score: '.$restaurant_reviews[$i]['value'] ?></div>
+					<div id="review_text"><?php echo 'Review: '.$restaurant_reviews[$i]['text'] ?></div>
+				</div>
+			<?php
+				}
+			?>
+  		</div>
+
 	</body>
 </html>

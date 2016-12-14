@@ -1,7 +1,5 @@
 <?php
 session_start();
-?>
-<?php
 
 include_once('../database/databaseInteraction.php');
 
@@ -56,6 +54,7 @@ else if($restauranttmplocation != NULL)
 
 
 ?>
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -81,8 +80,7 @@ else if($restauranttmplocation != NULL)
 		<div id="middle">
     	<div id="restaurant">
 		<div id="name"><?php echo $restaurant_name ?></div>
-		<!-- Fotos em slide show -->
-      	<img src="../images/kika.png">
+      	<img src="../images/restaurant.png">
         <div id="location"><?php echo 'Location: '.$restaurant_location ?></div>
 		<div id="type"><?php echo 'Type: '.$restaurant_type ?></div>
 		<div id="description"><?php echo 'Description: '.$restaurant_description ?></div>
