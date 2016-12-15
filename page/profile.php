@@ -55,6 +55,10 @@ session_start();
 					<a data-popup-open="popup-2" href="#">Change Password</a>
 				</div>
 			
+				<?php 
+				
+				
+				if(getUserInfo($_SESSION['username'])['user_type'] == "Owner"){ ?>
 				
 				<div class="editBtn">
 					<a data-popup-open="popup-3" href="#">New Restaurant</a>
@@ -63,7 +67,7 @@ session_start();
 				<div class="editBtn">
 					<a data-popup-open="popup-4" href="#">Remove Restaurant</a>
 				</div>
-				
+				<?php } ?>
 				
 				<div class="popup" data-popup="popup-1">
 					<div class="popup-inner"> 
@@ -154,17 +158,8 @@ session_start();
 		
   		<div id="restaurants">Restaurants</div>
 			<!-- Mais a baixo opções como titulo, pode editar dados ou criar restaurante -->
-    	<div id="options">
-				<div id="title-options">Options</div>
-		</div>
-		
-      	<div id="edit">
-        	<input type="button" value="Edit" onclick="window.location.href='profile_edit.php';">
-      	</div>
-			
-		
-		
-		
+  
+				
 		<div id="down-part">
 			<!-- Lista restaurantes que ja avaliou -->
 		</div>
