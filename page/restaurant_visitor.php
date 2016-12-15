@@ -104,7 +104,7 @@ else if($restauranttmplocation != NULL)
 				for($i = 0; $i < sizeof($restaurant_reviews); $i++){
 			?>
 				<div id="oneReview">
-					<div id="review_username"><?php echo $restaurant_reviews[$i]['username']?></div>
+					<div id="review_username"><?php echo $restaurant_reviews[$i]['username']?></div><br>
 					<div id="review_value"><?php echo 'Score: '.$restaurant_reviews[$i]['value'] ?></div>
 					<div id="review_text"><?php echo 'Review: '.$restaurant_reviews[$i]['text'] ?></div>
 				</div>

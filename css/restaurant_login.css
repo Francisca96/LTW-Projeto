@@ -81,6 +81,7 @@ li a#login {
   margin-left: 25%;
   text-align: left;
   list-style-type: none;
+  line-height: 180%;
 }
 
 #image {
@@ -92,7 +93,7 @@ li a#login {
 
 #restaurant {
   width:100%;
-  margin-bottom: 15%;
+  margin-bottom: 7%;
 }
 
 #review {
@@ -106,6 +107,7 @@ li a#login {
 #name {
   font-size: 30px;
   margin-top: 15%;
+  color: white;
 }
 
 #newreview_text {
@@ -136,12 +138,14 @@ textarea {
   text-align: left;
   margin-left: 15%;
   margin-right: 15%;
+  margin-bottom: 10%;
 }
 
 #oneReview {
   margin-top: 5%;
   background-color: #CD5B45;
   padding: 3%;
+  border: 1px solid black;
 }
 
 .rating {
