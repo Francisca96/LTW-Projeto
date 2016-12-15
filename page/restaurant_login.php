@@ -77,43 +77,48 @@ else if($restauranttmplocation != NULL)
 			</nav><br>
 		</header>
 
-		<div id="middle">
-    	<div id="restaurant">
-		<div id="name"><?php echo $restaurant_name ?></div>
-      	<img src="../images/restaurant.png">
-        <div id="location"><?php echo 'Location: '.$restaurant_location ?></div>
-		<div id="type"><?php echo 'Type: '.$restaurant_type ?></div>
-		<div id="description"><?php echo 'Description: '.$restaurant_description ?></div>
-		<div id="points"><?php echo 'Score: '.$restaurant_score ?></div>
+		<div id="name"><?php echo $restaurant_name ?></div><br><br>
+		<div id="restaurant">
+			<div>
+				<img src="../images/restaurant.png" id="image">
+			</div>
+			<div id="bi">
+				<li><div id="location"><?php echo 'Location: '.$restaurant_location ?></div></li>
+				<li><div id="type"><?php echo 'Type: '.$restaurant_type ?></div></li>
+				<li><div id="description"><?php echo 'Description: '.$restaurant_description ?></div></li>
+				<li><div id="points"><?php echo 'Score: '.$restaurant_score ?></div></li>
+			</div>
+		</div>
 
-			<form id="review" method="post" action="makereview.php?id=<?php echo $restaurant_id?>" onsubmit="return validateForm();">
-				<h1>Your Review</h1>
-				<div class="rating">
+		<form id="review" method="post" action="makereview.php?id=<?php echo $restaurant_id?>" onsubmit="return validateForm();">
+			<h1>Your Review</h1>
+			<div class="rating">
 				<span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
-				</div>
-				<p>
-				<input id="newreview_text" type="text" name="newreview_text" placeholder="Write your review here..." required/>
-				</p>
-				<p>
-				<input id="newscore" type="text" name="newscore" placeholder="Score" required/>
-				</p>
-				<button type="submit">Submit</button>
+			</div>
+			<p>
+			<input id="newreview_text" type="text" name="newreview_text" placeholder="Write your review here..." required/>
+			</p>
+			<p>
+			<input id="newscore" type="text" name="newscore" placeholder="Score" required/>
+			</p>
+			<button type="submit">Submit</button>
+		</form>
 
-			</form>
-
-		<div id="reviews">
-		<?php
-			for($i = 0; $i < sizeof($restaurant_reviews); $i++){
+			<div id="reviews">
+			<?php
+				for($i = 0; $i < sizeof($restaurant_reviews); $i++){
 			?>
-			<div id="review_username"><?php echo 'Username: '.$restaurant_reviews[$i]['username']?></div>
-			<div id="review_value"><?php echo 'Score: '.$restaurant_reviews[$i]['value'] ?></div>
-			<div id="review_text"><?php echo 'Review: '.$restaurant_reviews[$i]['text'] ?></div>
-		<?php
-			}
-		?>
-		</div>
+				<div id="oneReview">
+					<div id="review_username"><?php echo $restaurant_reviews[$i]['username']?></div>
+					<div id="review_value"><?php echo 'Score: '.$restaurant_reviews[$i]['value'] ?></div>
+					<div id="review_text"><?php echo 'Review: '.$restaurant_reviews[$i]['text'] ?></div>
+				</div>
+			<?php
+				}
+			?>
+			</div>
     	</div>
-		</div>
+
 
 
 

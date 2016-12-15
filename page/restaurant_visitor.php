@@ -86,7 +86,7 @@ else if($restauranttmplocation != NULL)
 					<li><div id="description"><?php echo 'Description: '.$restaurant_description ?></div></li>
 					<li><div id="points"><?php echo 'Score: '.$restaurant_score ?></div></li>
 				</div>
-			</div><br><br>
+			</div>
 
 			<div id="text">You must <a href="main.php">login</a> to do a review</div>
 
@@ -102,8 +102,8 @@ else if($restauranttmplocation != NULL)
 			<?php
 				}
 			?>
-			
-			
+
+
   		</div>
 
 	</body>
