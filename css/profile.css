@@ -1,5 +1,5 @@
 html, body {
-  height: 100%;
+  height: 110%;
   width: 60%;
 	font-family: raleway;
 	background-repeat: no-repeat;
@@ -25,18 +25,15 @@ body {
 header {
   top: -10px;
   position: fixed;
-  width: 60%;
-  background-color: #8B3E2F;
-  border-bottom: 1px solid white;
+  width: 53%;
+  padding-left: 7%;
 }
 
-#menu {
-  margin-left: 3%;
-  margin-top: 2%;
+.logo {
+  margin-left: 1%;
 }
 
 #menu ul {
-  display: inline;
   list-style-type: none;
   padding: 0;
   overflow: hidden;
@@ -45,17 +42,7 @@ header {
 }
 
 #menu li {
-  margin-right: 2%;
-  margin-top: 2%;
-}
-
-li a#login {
-  float:left;
-  margin-top: 2%;
-  margin-left: 1%;
-}
-
-#menu a{
+  display: inline;
   float: left;
 }
 
@@ -67,17 +54,13 @@ li a#login {
   font-size: 18px;
 }
 
-#menu li#logReg {
-  float: right;
-  background-color: gray;
-}
-
 #menu li a:hover {
     background-color: #CD5B45;
 }
 
-#profile {
-  margin-top: 15%;
+#menu li#logReg {
+  float: right;
+  background-color: gray;
 }
 
 .editBtn {
@@ -116,12 +99,12 @@ li a#login {
 .popup a {
 	text-decoration: none;
 }
-
+ 
 .popup #submit {
 	font-size: 24px;
 }
-
-
+ 
+ 
 .popup-inner {
     width:30%;
     padding:40px;
@@ -133,7 +116,7 @@ li a#login {
     box-shadow:0px 2px 6px rgba(0,0,0,1);
     border-radius:3px;
     background:#fff;
-
+	
 }
 
 .popup-inner .inputField {
@@ -150,7 +133,7 @@ li a#login {
 	margin-left: auto;
 	margin-right: auto;
 }
-
+ 
 .popup-close {
     width:30px;
     height:30px;
@@ -170,7 +153,7 @@ li a#login {
     line-height:100%;
     color:#fff;
 }
-
+ 
 .popup-close:hover {
     -webkit-transform:translate(50%, -50%) rotate(180deg);
     transform:translate(50%, -50%) rotate(180deg);
@@ -185,3 +168,7 @@ li a#login {
   font-family: raleway;
   text-align: center;
 }
+
+
+
+ 
