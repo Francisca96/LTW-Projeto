@@ -35,11 +35,13 @@ session_start();
 					<?php if(getUserInfo($_SESSION['username'])['gender'] == "female"){?>
 					<img src="../images/woman.png">
 					<?php
-					}else{?>
-					<img src="../images/man.png">
+					}else if($_SESSION['username'] == "FilipeCorreia"){?>
+					<img src="../images/filipe.png">
 					<?php
 					}
-					?>
+					else{ ?>
+					<img src="../images/man.png">
+					<?php } ?>
 
 				<div id="type"><?php echo getUserInfo($_SESSION['username'])['user_type']?></div>
 				<div id="name"><?php echo getUserInfo($_SESSION['username'])['name']?></div>
@@ -153,13 +155,5 @@ session_start();
 			</div>
 		</div>
 
-
-  		<div id="restaurants">Restaurants</div>
-			<!-- Mais a baixo opções como titulo, pode editar dados ou criar restaurante -->
-
-
-		<div id="down-part">
-			<!-- Lista restaurantes que ja avaliou -->
-		</div>
 	</body>
 </html>
