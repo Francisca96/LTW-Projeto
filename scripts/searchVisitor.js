@@ -4,7 +4,7 @@ $(document).ready(function(){
         var term = $(this).val() + "%";
         var resultDropdown = $(this).siblings(".result");
         if(term.length){
-            $.get("../database/livesearch.php", {query: term}).done(function(data){
+            $.get("../database/livesearchVisitor.php", {query: term}).done(function(data){
                 // Display the returned data in browser
                 resultDropdown.html(data);
             });

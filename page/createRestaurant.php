@@ -15,8 +15,9 @@
 
 	
 	putRestaurant($restaurantName,$location,$type,$description,$tel,$price);
+	$restaurant = getRestaurantByName($restaurantName);
+	$restaurantid = $restaurant['id'];
+	putOwnerRestaurant($restaurantid,$_SESSION['username']);
 	header('Location: ../page/profile.php');
-
-
 	
 ?>

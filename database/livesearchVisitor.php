@@ -39,7 +39,7 @@ function showPrice($price) {
 	for($i = 0; $i < $length; $i++){ ?>
 		<div class="restaurant">
 			<ul>
-				<h3> <a href="../page/restaurant_login.php?name=<?php echo $result[$i]['name'] ?>"><?php echo $result[$i]['name'] ?></a></h3>
+				<h3> <a href="../page/restaurant_visitor.php?name=<?php echo $result[$i]['name'] ?>"><?php echo $result[$i]['name'] ?></a></h3>
 				<h3> Score: <?php echo calculateScore($result[$i]['id']); ?></h3>
 				<h3> Price: <?php echo showPrice($result[$i]['price']); ?></h3><br>
 			</ul>

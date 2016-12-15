@@ -16,14 +16,24 @@ function calculateScore($restaurant_id) {
 
 }
 
+function showPrice($price) {
+
+	if($price = "low")
+		$media = "$";
+	else if ($price = "medium")
+		$media = "$$";
+	else 
+		$media = "$$$";
+	
+	return $media;
+}
 
 
-$restaurant_name=$_POST['restaurant_search'];
-$restaurant_localation=$_POST['local_search'];
+
+$restaurant_name=$_GET['name'];
+
 
 $restauranttmpname = getRestaurantByName($restaurant_name);
-$restauranttmplocation = getRestaurantByLocation($restaurant_localation);
-
 
 if($restauranttmpname != NULL)
 {
@@ -38,22 +48,9 @@ if($restauranttmpname != NULL)
 	$restaurant_reviews = getRestaurantReviews($restaurant_id);
 
 }
-else if($restauranttmplocation != NULL)
-	{
-		$restaurant_id = $restauranttmplocation['id'];
-		$restaurant_name = $restauranttmplocation['name'];
-		$restaurant_location = $restauranttmplocation['location'];
-		$restaurant_type = $restauranttmplocation['type'];
-		$restaurant_description = $restauranttmplocation['description'];
-		$restaurant_phone = $restauranttmplocation['phone'];
-		$restaurant_price = $restauranttmplocation['price'];
-		$restaurant_score = calculateScore($restaurant_id);
-		$restaurant_reviews = getRestaurantReviews($restaurant_id);
-	}
-	else
-	{
-	header('Location: visitor.php');
-	}
+else{
+	header('Location: login.php');
+}
 
 
 ?>
@@ -91,7 +88,7 @@ else if($restauranttmplocation != NULL)
         	<li><div id="location"><?php echo 'Location: '.$restaurant_location ?></div></li>
 					<li><div id="type"><?php echo 'Type: '.$restaurant_type ?></div></li>
 					<li><div id="description"><?php echo 'Description: '.$restaurant_description ?></div></li>
-					<li><div id="price"><?php echo 'Price: '.$restaurant_price ?></div></li>
+					<li><div id="price"><?php echo 'Price: '.showPrice($restaurant_price) ?></div></li>
 					<li><div id="phone"><?php echo 'Phone: '.$restaurant_phone ?></div></li>
 					<li><div id="points"><?php echo 'Score: '.$restaurant_score ?></div></li>
 				</div>

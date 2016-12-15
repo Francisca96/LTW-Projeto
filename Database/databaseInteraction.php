@@ -108,6 +108,13 @@ function putRestaurant($name,$location,$type,$description,$phone,$price){
 	return $stmt->errorCode();	
 }
 
+function putOwnerRestaurant($idrestaurant,$username){
+	global $db;
+    $stmt = $db->prepare("INSERT INTO ownerRestaurant VALUES(?,?)");
+    $stmt->execute(array($username, $idrestaurant));
+	return $stmt->errorCode();
+}
+
 function getRestaurantByName($name){
   global $db;
   $stmt = $db->prepare("SELECT * FROM restaurant WHERE name = ?");
@@ -130,10 +137,9 @@ function addOwner($id_restaurant, $username){
 
 function getOwners($id_restaurant){
     global $db;
-    $stmt = $db->prepare("SELECT username FROM ownerRestaurant WHERE id_restaurant = ?");
+    $stmt = $db->prepare("SELECT ownerName FROM ownerRestaurant WHERE id_restaurant = ?");
     $stmt->execute(array($id_restaurant));
-    $result = $stmt->fetchAll();
-    return $result;
+    return $stmt->fetch();
 }
 
 function getPassword($username){
@@ -160,6 +166,24 @@ function changeUserName($username,$newName){
   global $db;
   $stmt = $db->prepare('UPDATE user SET name = ? WHERE username = ?');
   return $stmt->execute(array($newName, $username));
+}
+
+function changeRestaurantName($restaurant_id,$newName){
+  global $db;
+  $stmt = $db->prepare('UPDATE restaurant SET name = ? WHERE id = ?');
+  return $stmt->execute(array($newName, $restaurant_id));
+}
+
+function changeRestaurantDescription($restaurant_id,$newDescription){
+  global $db;
+  $stmt = $db->prepare('UPDATE restaurant SET description = ? WHERE id = ?');
+  return $stmt->execute(array($newDescription, $restaurant_id));
+}
+
+function changeRestaurantContact($restaurant_id,$newContact){
+  global $db;
+  $stmt = $db->prepare('UPDATE restaurant SET phone = ? WHERE id = ?');
+  return $stmt->execute(array($newContact, $restaurant_id));
 }
 
 ?>

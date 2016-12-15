@@ -17,14 +17,24 @@ function calculateScore($restaurant_id) {
 
 }
 
+function showPrice($price) {
+
+	if($price = "low")
+		$media = "$";
+	else if ($price = "medium")
+		$media = "$$";
+	else 
+		$media = "$$$";
+	
+	return $media;
+}
 
 
-$restaurant_name=$_POST['restaurant_search'];
-$restaurant_localation=$_POST['local_search'];
+
+$restaurant_name=$_GET['name'];
+
 
 $restauranttmpname = getRestaurantByName($restaurant_name);
-$restauranttmplocation = getRestaurantByLocation($restaurant_localation);
-
 
 if($restauranttmpname != NULL)
 {
@@ -39,22 +49,9 @@ if($restauranttmpname != NULL)
 	$restaurant_reviews = getRestaurantReviews($restaurant_id);
 
 }
-else if($restauranttmplocation != NULL)
-	{
-		$restaurant_id = $restauranttmplocation['id'];
-		$restaurant_name = $restauranttmplocation['name'];
-		$restaurant_location = $restauranttmplocation['location'];
-		$restaurant_type = $restauranttmplocation['type'];
-		$restaurant_description = $restauranttmplocation['description'];
-		$restaurant_phone = $restauranttmplocation['phone'];
-		$restaurant_price = $restauranttmplocation['price'];
-		$restaurant_score = calculateScore($restaurant_id);
-		$restaurant_reviews = getRestaurantReviews($restaurant_id);
-	}
-	else
-	{
+else{
 	header('Location: login.php');
-	}
+}
 
 
 ?>
@@ -65,6 +62,8 @@ else if($restauranttmplocation != NULL)
 		<title>AlaDine</title>
     <meta charset="utf-8">
 		<link rel="stylesheet" href="../css/restaurant_login.css">
+		<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript" src="../scripts/restaurant_login.js"></script>
 	</head>
 
 	<body>
@@ -88,11 +87,46 @@ else if($restauranttmplocation != NULL)
 				<li><div id="location"><?php echo 'Location: '.$restaurant_location ?></div></li>
 				<li><div id="type"><?php echo 'Type: '.$restaurant_type ?></div></li>
 				<li><div id="description"><?php echo 'Description: '.$restaurant_description ?></div></li>
-				<li><div id="price"><?php echo 'Price: '.$restaurant_price ?></div></li>
+				<li><div id="price"><?php echo 'Price: '.showPrice($restaurant_price) ?></div></li>
 				<li><div id="phone"><?php echo 'Phone: '.$restaurant_phone ?></div></li>
 				<li><div id="points"><?php echo 'Score: '.$restaurant_score ?></div></li>
 			</div>
 		</div>
+		
+			<?php 
+				
+				if(getOwners($restaurant_id)['ownerName'] == $_SESSION['username']){ ?>
+				<div class="editBtn">
+
+					<a class="loginBtn" data-popup-open="popup-1" href="#">Edit Restaurant</a>
+
+				</div>
+				
+				<div class="popup" data-popup="popup-1">
+					<div class="popup-inner">
+
+					<form action="../page/change_restaurant_name.php<?php echo "?id=" . $restaurant_id ?>" method="post">
+						<input class="inputField" type="text" id="name" required="required" name="name" placeholder="New Name">
+						<input class= "editSubmit" id="submit" type="submit" value ="Change">
+
+					</form>
+					<form action="../page/change_restaurant_description.php<?php echo "?id=" . $restaurant_id ?>" method="post">
+						<input class="inputField" type="text" id="desc" required="required" name="description" placeholder="New Description">
+						<input class= "editSubmit" id="submit" type="submit" value ="Change">
+					</form>
+					
+					<form action="../page/change_restaurant_contact.php<?php echo "?id=" . $restaurant_id ?>" method="post">
+						<input class="inputField" type="tel" id="tel" required="required" name="telephone" placeholder="New Telephone Number">
+						<input class= "editSubmit" id="submit" type="submit" value ="Change">
+					</form>
+
+
+					<a class="popup-close" data-popup-close="popup-1" href="#">x</a>
+					</div>
+				</div>
+				
+				
+				<?php } ?>
 
 
 		<h1>Your opinion:</h1>

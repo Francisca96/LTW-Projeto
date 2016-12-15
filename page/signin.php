@@ -17,10 +17,12 @@
     $_SESSION['username'] = $username;
     $_SESSION['name'] = $userInfo['name'];
 
-    header('Location: login.php');
+       header("Location: ../page/login.php");
+
   }
   else{
-    echo "Username or Password incorrect";
+	  
+    header("Location: ../page/main.php");
 	
   }
 

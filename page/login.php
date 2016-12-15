@@ -7,6 +7,8 @@ session_start();
 		<title>AlaDine</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="../css/login.css">
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="../scripts/search.js"></script>
 	</head>
 
 	<body>
@@ -22,14 +24,9 @@ session_start();
 		</header>
 
 		<h1>Expand your possibilities!</h1>
-		<div id="middle">
-      <div id="search-bar">
-      	<form action="restaurant_login.php" method="post">
-        	<input id="searchLocal" type="text" name="local_search" placeholder="Pesquisar por local..."/>
-        	<input id="searchRestaurant" type="text" name="restaurant_search" placeholder="Pesquisar por restaurante..."/>
-					<input id="searchBtn" type="submit" value="Search">
-        </form>
-			</div>
+		<div class="search-box">
+			<input type="text" autocomplete="off" placeholder="Search restaurant..." />
+        <div class="result"></div>
 		</div>
 	</body>
 </html>

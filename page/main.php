@@ -21,7 +21,7 @@
 	<a class="loginBtn" data-popup-open="popup-1" href="#">Sign In</a>
 	<a class="loginBtn" data-popup-open="popup-2" href="#">Register</a>
 
-
+	</div>
 
 	<div class="guestBtn">
 		<a class="loginBtn" href="../page/visitor.php"> Enter as Guest</a>
