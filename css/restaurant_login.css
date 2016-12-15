@@ -29,8 +29,11 @@ header {
   padding-left: 7%;
 }
 
-.logo {
-  margin-left: 1%;
+#logo1{
+	margin-left: 0.8%;
+	margin-top: 0.3%;
+	position: fixed;
+	float: left;
 }
 
 #menu ul {

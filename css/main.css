@@ -32,6 +32,7 @@ body {
   border: solid 1px black;
   font-size: 25px;
   font-family: raleway;
+  text-align: center;
 }
 
 .loginBtn, .signUpBtn {
@@ -64,6 +65,7 @@ body {
 	margin-right: auto;
 	margin-top: 5%;
 }
+
  
 .btn {
 	border: solid 1px black;
@@ -84,6 +86,10 @@ body {
     top:0px;
     left:0px;
     background:rgba(0,0,0,0.75);
+}
+
+.popup a {
+	text-decoration: none;
 }
  
 .popup #submit {
@@ -145,7 +151,6 @@ body {
     -webkit-transform:translate(50%, -50%) rotate(180deg);
     transform:translate(50%, -50%) rotate(180deg);
     background:rgba(0,0,0,1);
-    text-decoration:none;
 }
 
 

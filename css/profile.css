@@ -64,15 +64,26 @@ header {
 }
 
 .editBtn {
-	width: 50%;
+	width: 22%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5px;
+	margin-bottom: 5px;
 	border: solid 1px black;
 	border-radius: 3px;
 	font-family: raleway;
 	font-weight: 600;
-	padding: 5px;
-	margin: 5px;
 	font-size: 20px;
 	background-color: #9c9c9c;
+}
+
+.editBtn:hover {
+	background-color: #CD5B45;
+}
+
+.editBtn a {
+	text-decoration: none;
+	color: #FFFFFF;
 }
 
 .popup {
@@ -83,6 +94,10 @@ header {
     top:0px;
     left:0px;
     background:rgba(0,0,0,0.75);
+}
+
+.popup a {
+	text-decoration: none;
 }
  
 .popup #submit {
@@ -144,7 +159,16 @@ header {
     -webkit-transform:translate(50%, -50%) rotate(180deg);
     transform:translate(50%, -50%) rotate(180deg);
     background:rgba(0,0,0,1);
-    text-decoration:none;
 }
+
+.inputField {
+  margin: 5px;
+  padding-left: 10px;
+  border: solid 1px black;
+  font-size: 25px;
+  font-family: raleway;
+  text-align: center;
+}
+
 
  

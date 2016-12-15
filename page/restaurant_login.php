@@ -1,7 +1,7 @@
 <?php
-session_start();
 
 include_once('../database/databaseInteraction.php');
+session_start();
 
 function calculateScore($restaurant_id) {
 
@@ -18,6 +18,7 @@ function calculateScore($restaurant_id) {
 }
 
 
+
 $restaurant_name=$_POST['restaurant_search'];
 $restaurant_localation=$_POST['local_search'];
 
@@ -32,6 +33,8 @@ if($restauranttmpname != NULL)
 	$restaurant_location = $restauranttmpname['location'];
 	$restaurant_type = $restauranttmpname['type'];
 	$restaurant_description = $restauranttmpname['description'];
+	$restaurant_phone = $restauranttmpname['phone'];
+	$restaurant_price = $restauranttmpname['price'];
 	$restaurant_score = calculateScore($restaurant_id);
 	$restaurant_reviews = getRestaurantReviews($restaurant_id);
 
@@ -43,15 +46,16 @@ else if($restauranttmplocation != NULL)
 		$restaurant_location = $restauranttmplocation['location'];
 		$restaurant_type = $restauranttmplocation['type'];
 		$restaurant_description = $restauranttmplocation['description'];
+		$restaurant_phone = $restauranttmplocation['phone'];
+		$restaurant_price = $restauranttmplocation['price'];
 		$restaurant_score = calculateScore($restaurant_id);
 		$restaurant_reviews = getRestaurantReviews($restaurant_id);
 	}
 	else
 	{
-	header('Location: login.php');
+	header('Location: visitor.php');
 	}
-
-
+	
 
 ?>
 
@@ -64,18 +68,18 @@ else if($restauranttmplocation != NULL)
 	</head>
 
 	<body>
-		<table class="logo">
-			<caption style="color:white; font-size:20px; font-weight:lighter;" align="bottom">AlaDine</caption>
-			<tr><td><a href="visitor.php"><img src="../images/logo_white.png" alt="owner" height="70px" width="70px"></a></td></tr>
-		</table>
+	
+		<div id=top>
 		<header>
 			<nav id="menu">
 				<ul>
 					<li><a href="profile.php"><?php echo $_SESSION['name']?></a></li>
-					<li style="float:right; background-color:gray;"><a href="visitor.php">Logout</a></li>
+					<li style="float:right; background-color:gray;"><a href="main.php">Login/Register</a></li>
 				</ul>
 			</nav><br>
 		</header>
+		<a id = logo1 href="login.php" target="login.php"><img id="logo1" src="../images/logo_white.png" height="70px" width="70px"></a>
+		</div>
 
 		<div id="name"><?php echo $restaurant_name ?></div><br><br>
 		<div id="restaurant">
@@ -86,6 +90,8 @@ else if($restauranttmplocation != NULL)
 				<li><div id="location"><?php echo 'Location: '.$restaurant_location ?></div></li>
 				<li><div id="type"><?php echo 'Type: '.$restaurant_type ?></div></li>
 				<li><div id="description"><?php echo 'Description: '.$restaurant_description ?></div></li>
+				<li><div id="price"><?php echo 'Price: '.$restaurant_price ?></div></li>
+				<li><div id="phone"><?php echo 'Phone: '.$restaurant_phone ?></div></li>
 				<li><div id="points"><?php echo 'Score: '.$restaurant_score ?></div></li>
 			</div>
 		</div>

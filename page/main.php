@@ -14,16 +14,19 @@
     <img id="logo" src="../images/logo.png" height="150px" width="150px">
     <div class="sitename">AlaDine</a></div>
 
-	<div class="userBtns">
+	<div>
+	
+	<div class="userBtn">
 
 	<a class="loginBtn" data-popup-open="popup-1" href="#">Sign In</a>
 	<a class="loginBtn" data-popup-open="popup-2" href="#">Register</a>
 
-	</div>
+
 
 	<div class="guestBtn">
 		<a class="loginBtn" href="../page/visitor.php"> Enter as Guest</a>
 	</div>
+	
 
 	<div class="popup" data-popup="popup-1">
 		<div class="popup-inner">

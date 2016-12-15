@@ -22,6 +22,7 @@ body {
   text-align: center;
 }
 
+
 header {
   top: -10px;
   position: fixed;
@@ -29,8 +30,11 @@ header {
   padding-left: 7%;
 }
 
-.logo {
-  margin-left: 1%;
+#logo1{
+	margin-left: 0.8%;
+	margin-top: 0.3%;
+	position: fixed;
+	float: left;
 }
 
 #menu ul {
@@ -69,6 +73,7 @@ header {
   list-style-type: none;
 }
 
+
 #image {
   width: 20%;
   margin-left:15%;
@@ -88,6 +93,7 @@ header {
 
 #name {
   font-size: 30px;
+  margin-top:10%;
 }
 
 
