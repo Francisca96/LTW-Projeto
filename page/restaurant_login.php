@@ -90,38 +90,34 @@ else if($restauranttmplocation != NULL)
 			</div>
 		</div>
 
+
+		<h1>Your opinion:</h1>
 		<form id="review" method="post" action="makereview.php?id=<?php echo $restaurant_id?>" onsubmit="return validateForm();">
-			<h1>Your Review</h1>
 			<div class="rating">
 				<span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
 			</div>
 			<p>
-			<input id="newreview_text" type="text" name="newreview_text" placeholder="Write your review here..." required/>
+				<textarea name="textarea" cols="70" rows="10" placeholder="Write your review here..."></textarea>
 			</p>
 			<p>
-			<input id="newscore" type="text" name="newscore" placeholder="Score" required/>
+			<input id="newscore" type="number" min="1" max="5" style="width:10%;" name="newscore" placeholder="Score" required/>
 			</p>
 			<button type="submit">Submit</button>
 		</form>
 
-			<div id="reviews">
-			<?php
-				for($i = 0; $i < sizeof($restaurant_reviews); $i++){
-			?>
-				<div id="oneReview">
-					<div id="review_username"><?php echo $restaurant_reviews[$i]['username']?></div>
-					<div id="review_value"><?php echo 'Score: '.$restaurant_reviews[$i]['value'] ?></div>
-					<div id="review_text"><?php echo 'Review: '.$restaurant_reviews[$i]['text'] ?></div>
-				</div>
-			<?php
-				}
-			?>
+		<br><h1>Reviews:</h1>
+		<div id="reviews">
+		<?php
+			for($i = 0; $i < sizeof($restaurant_reviews); $i++){
+		?>
+			<div id="oneReview">
+				<div id="review_username"><?php echo $restaurant_reviews[$i]['username']?></div>
+				<div id="review_value"><?php echo 'Score: '.$restaurant_reviews[$i]['value'] ?></div>
+				<div id="review_text"><?php echo 'Review: '.$restaurant_reviews[$i]['text'] ?></div>
 			</div>
-    	</div>
-
-
-
-
-
+		<?php
+			}
+		?>
+		</div>
 	</body>
 </html>
