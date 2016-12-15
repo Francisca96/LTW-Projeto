@@ -53,7 +53,7 @@ else if($restauranttmplocation != NULL)
 	}
 	else
 	{
-	header('Location: visitor.php');
+	header('Location: login.php');
 	}
 
 
