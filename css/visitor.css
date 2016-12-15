@@ -1,5 +1,5 @@
 html, body {
-  height: 110%;
+  height: 100%;
   width: 60%;
 	font-family: raleway;
 	background-repeat: no-repeat;
@@ -25,15 +25,18 @@ body {
 header {
   top: -10px;
   position: fixed;
-  width: 53%;
-  padding-left: 7%;
+  width: 60%;
+  background-color: #8B3E2F;
+  border-bottom: 1px solid white;
 }
 
-.logo {
-  margin-left: 1%;
+#menu {
+  margin-left: 3%;
+  margin-top: 2%;
 }
 
 #menu ul {
+  display: inline;
   list-style-type: none;
   padding: 0;
   overflow: hidden;
@@ -42,7 +45,17 @@ header {
 }
 
 #menu li {
-  display: inline;
+  margin-right: 2%;
+  margin-top: 2%;
+}
+
+li#visitor {
+  float:left;
+  margin-top: 3%;
+  margin-left: 1%;
+}
+
+#menu a{
   float: left;
 }
 
@@ -54,11 +67,16 @@ header {
   font-size: 18px;
 }
 
+#menu li#logReg {
+  float: right;
+  background-color: gray;
+}
+
+
 #menu li a:hover {
     background-color: #CD5B45;
 }
 
-#menu li#logReg {
-  float: right;
-  background-color: gray;
+h1 {
+  margin-top: 15%;
 }

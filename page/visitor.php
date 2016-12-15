@@ -6,19 +6,18 @@
     <link rel="stylesheet" href="../css/visitor.css">
 	</head>
 
-	<table class="logo">
-		<caption style="color:white; font-size:20px; font-weight:lighter;" align="bottom">AlaDine</caption>
-		<tr><td><a href="visitor.php"><img src="../images/logo_white.png" alt="owner" height="70px" width="70px"></a></td></tr>
-	</table>
-	<header>
-  	<nav id="menu">
-			<ul>
-				<li><a>Visitor</a></li>
-  			<li style="float:right; background-color:gray;"><a href="main.php">Login/Register</a></li>
-			</ul>
-    </nav><br>
-	</header>
 	<body>
+
+		<header>
+			<nav id="menu">
+				<ul>
+					<a href="visitor.php"><img id="logo1" src="../images/logo_white.png" height="70px" width="70px"></a>
+					<li id="visitor">Visitor</li>
+					<li style="float:right; background-color:gray;"><a href="main.php">Login/Register</a></li>
+				</ul>
+			</nav><br>
+		</header>
+
 		<h1>Expand your possibilities!</h1>
   	<div id="middle-elements">
   		<div id="search-bar">

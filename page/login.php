@@ -10,15 +10,13 @@ session_start();
 	</head>
 
 	<body>
-		<table class="logo">
-			<caption style="color:white; font-size:20px; font-weight:lighter;" align="bottom">AlaDine</caption>
-			<tr><td><a href="visitor.php"><img src="../images/logo_white.png" alt="owner" height="70px" width="70px"></a></td></tr>
-		</table>
+
 		<header>
 			<nav id="menu">
 				<ul>
-					<li><a href="profile.php"><?php echo $_SESSION['name']?></a></li>
-					<li style="float:right; background-color:gray;"><a href="visitor.php">Logout</a></li>
+					<a href="login.php"><img id="logo1" src="../images/logo_white.png" height="70px" width="70px"></a>
+						<li><a id="login" href="profile.php"><?php echo $_SESSION['name']?></a></li>
+					<li style="float:right; background-color:gray;"><a href="main.php">Logout</a></li>
 				</ul>
 			</nav><br>
 		</header>

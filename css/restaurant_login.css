@@ -25,18 +25,18 @@ body {
 header {
   top: -10px;
   position: fixed;
-  width: 53%;
-  padding-left: 7%;
+  width: 60%;
+  background-color: #8B3E2F;
+  border-bottom: 1px solid white;
 }
 
-#logo1{
-	margin-left: 0.8%;
-	margin-top: 0.3%;
-	position: fixed;
-	float: left;
+#menu {
+  margin-left: 3%;
+  margin-top: 2%;
 }
 
 #menu ul {
+  display: inline;
   list-style-type: none;
   padding: 0;
   overflow: hidden;
@@ -45,7 +45,17 @@ header {
 }
 
 #menu li {
-  display: inline;
+  margin-right: 2%;
+  margin-top: 2%;
+}
+
+li a#login {
+  float:left;
+  margin-top: 2%;
+  margin-left: 1%;
+}
+
+#menu a{
   float: left;
 }
 
@@ -57,13 +67,14 @@ header {
   font-size: 18px;
 }
 
-#menu li a:hover {
-    background-color: #CD5B45;
-}
-
 #menu li#logReg {
   float: right;
   background-color: gray;
+}
+
+
+#menu li a:hover {
+    background-color: #CD5B45;
 }
 
 #bi li {
@@ -94,6 +105,7 @@ header {
 
 #name {
   font-size: 30px;
+  margin-top: 15%;
 }
 
 #newreview_text {

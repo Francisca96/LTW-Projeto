@@ -54,7 +54,7 @@ else if($restauranttmplocation != NULL)
 	{
 	header('Location: visitor.php');
 	}
-	
+
 
 ?>
 
@@ -71,19 +71,16 @@ else if($restauranttmplocation != NULL)
 	</head>
 
 	<body>
-	
-		<div id=top>
+
 		<header>
 			<nav id="menu">
 				<ul>
-					<li><a>Visitor</a></li>
+					<a href="visitor.php"><img id="logo1" src="../images/logo_white.png" height="70px" width="70px"></a>
+					<li id="visitor">Visitor</li>
 					<li style="float:right; background-color:gray;"><a href="main.php">Login/Register</a></li>
 				</ul>
 			</nav><br>
 		</header>
-		<a id = logo1 href="visitor.php" target="visitor.php"><img id="logo1" src="../images/logo_white.png" height="70px" width="70px"></a>
-		</div>
-
 
 			<div id="name"><?php echo $restaurant_name ?></div><br><br>
 			<div id="restaurant">
