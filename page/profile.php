@@ -13,20 +13,18 @@ session_start();
     <link rel="stylesheet" href="../css/profile.css">
 	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 	<script type="text/javascript" src="../scripts/profile.js"></script>
-	
-	
+
+
 	</head>
 
 	<body>
-		<table class="logo">
-			<caption style="color:white; font-size:20px; font-weight:lighter;" align="bottom">AlaDine</caption>
-			<tr><td><a href="visitor.php"><img src="../images/logo_white.png" alt="owner" height="70px" width="70px"></a></td></tr>
-		</table>
+
 		<header>
 			<nav id="menu">
 				<ul>
-					<li><a href="profile.php"><?php echo $_SESSION['name']?></a></li>
-					<li style="float:right; background-color:gray;"><a href="visitor.php">Logout</a></li>
+					<a href="login.php"><img id="logo1" src="../images/logo_white.png" height="70px" width="70px"></a>
+						<li><a id="login" href="profile.php"><?php echo $_SESSION['name']?></a></li>
+					<li style="float:right; background-color:gray;"><a href="signout.php">Logout</a></li>
 				</ul>
 			</nav><br>
 		</header>
@@ -50,28 +48,28 @@ session_start();
 				<div class="editBtn">
 					<a data-popup-open="popup-1" href="#">Edit Information</a>
 				</div>
-				
+
 				<div class="editBtn">
 					<a data-popup-open="popup-2" href="#">Change Password</a>
 				</div>
-			
-				<?php 
-				
-				
+
+				<?php
+
+
 				if(getUserInfo($_SESSION['username'])['user_type'] == "Owner"){ ?>
-				
+
 				<div class="editBtn">
 					<a data-popup-open="popup-3" href="#">New Restaurant</a>
 				</div>
-				
+
 				<div class="editBtn">
 					<a data-popup-open="popup-4" href="#">Remove Restaurant</a>
 				</div>
 				<?php } ?>
-				
+
 				<div class="popup" data-popup="popup-1">
-					<div class="popup-inner"> 
-					
+					<div class="popup-inner">
+
 					<form action="../page/change_name.php" method="post">
 						<input class="inputField" type="text" id="name" required="required" name="name" placeholder="New Name">
 						<input class= "editSubmit" id="submit" type="submit" value ="Change">
@@ -81,11 +79,11 @@ session_start();
 						<input class="inputField" type="email" id="email" required="required" name="email" placeholder="New Email">
 						<input class= "editSubmit" id="submit" type="submit" value ="Change">
 					</form>
-					
+
 					<a class="popup-close" data-popup-close="popup-1" href="#">x</a>
 					</div>
 				</div>
-				
+
 				<div class="popup" data-popup="popup-2">
 					<div class="popup-inner">
 					<form action="../page/change_password.php" onsubmit="return validate(this);" method="post">
@@ -93,11 +91,11 @@ session_start();
 						<input class="inputField" type="password" id="passwordConfirm" name="passwordConfirm" required="required" placeholder="Confirm Password"><br>
 						<input id="submit" type="submit" value ="Submit">
 					</form>
-					
+
 					<a class="popup-close" data-popup-close="popup-2" href="#">x</a>
 					</div>
 				</div>
-				
+
 				<div class="popup" data-popup="popup-3">
 					<div class="popup-inner">
 					<form action="../page/createRestaurant.php" method="post">
@@ -111,8 +109,8 @@ session_start();
 							<input type="radio" name="price" value="medium" checked> Medium
 							<input type="radio" name="price" value="low"> Low
 						</fieldset>
-						
-						
+
+
 						<select name="type">
 							<option value="Family Restaurant" checked>Family Restaurant</option>
 							<option value="Snack Bar">Snack Bar</option>
@@ -132,11 +130,11 @@ session_start();
 						</select><br><br>
 						<input id="submit" type="submit" value ="Submit">
 					</form>
-					
+
 					<a class="popup-close" data-popup-close="popup-3" href="#">x</a>
 					</div>
 				</div>
-				
+
 				<div class="popup" data-popup="popup-4">
 					<div class="popup-inner">
 					<form action="../page/signin.php" method="post">
@@ -144,22 +142,22 @@ session_start();
 						<input class="inputField" type="password" id="password" name="password" required="required" placeholder="Enter Password"><br>
 						<input id="submit" type="submit" value ="Submit">
 					</form>
-					
+
 					<a class="popup-close" data-popup-close="popup-4" href="#">x</a>
 					</div>
 				</div>
-				
-				
-				
-				
+
+
+
+
 			</div>
 		</div>
 
-		
+
   		<div id="restaurants">Restaurants</div>
 			<!-- Mais a baixo opções como titulo, pode editar dados ou criar restaurante -->
-  
-				
+
+
 		<div id="down-part">
 			<!-- Lista restaurantes que ja avaliou -->
 		</div>
