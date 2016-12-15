@@ -102,6 +102,8 @@ else if($restauranttmplocation != NULL)
 			<?php
 				}
 			?>
+			
+			
   		</div>
 
 	</body>

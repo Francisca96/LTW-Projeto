@@ -45,6 +45,7 @@ session_start();
     	</div>
 		</div>
 
+		
 		<div class="overlayChangePassword">
     	<div id="overlay-changePassword">
       	<div id="changePassword"></div>
@@ -54,8 +55,7 @@ session_start();
     	</div>
 		</div>
 
-		<div id="down-part">
-			<!-- Lista restaurantes que ja avaliou -->
+		
   		<div id="restaurants">Restaurants</div>
 			<!-- Mais a baixo opções como titulo, pode editar dados ou criar restaurante -->
     	<div id="options">
@@ -63,10 +63,15 @@ session_start();
       	<div id="edit">
         	<input type="button" value="Edit" onclick="window.location.href='profile_edit.php';">
       	</div>
-    		<div>
-      		<input type="button" value="Create restaurant" onclick="window.location.href='addRestaurant.php';">
-    		</div>
+		
+      		<div class="editBtn">
+				<a class="createBtn" data-popup-open="popup-1" href="#">Create Restaurant</a>
 			</div>
+			
+			
+			</div>
+		<div id="down-part">
+			<!-- Lista restaurantes que ja avaliou -->
 		</div>
 	</body>
 </html>

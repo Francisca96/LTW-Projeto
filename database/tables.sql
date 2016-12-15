@@ -45,7 +45,9 @@ CREATE TABLE restaurant (
 	name TEXT,
 	location TEXT,
   	type TEXT,
-  	description TEXT
+  	description TEXT,
+	phone TEXT,
+	price TEXT,
 );
 
 CREATE TABLE restaurantImage (
