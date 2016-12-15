@@ -101,7 +101,7 @@ function putReview($id_restaurant, $username, $text, $value){
 	return $stmt->errorCode();	
 }
 
-function putRestaurant($name,$location,$type,$description, $phone, $price){
+function putRestaurant($name,$location,$type,$description,$phone,$price){
     global $db;
     $stmt = $db->prepare("INSERT INTO restaurant VALUES(NULL,?,?,?,?,?,?)");
     $stmt->execute(array($name,$location,$type,$description, $phone, $price));

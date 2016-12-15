@@ -1,11 +1,10 @@
 <?php
 session_start();
 
-if(isset($_SESSION['name'])){
+if($_SESSION['name']){
     session_unset();
     session_destroy();
+	header("Location: main.php");
 }
-
-include_once('visitor.php');
 
  ?>

@@ -16,7 +16,7 @@ session_start();
 				<ul>
 					<a href="login.php"><img id="logo1" src="../images/logo_white.png" height="70px" width="70px"></a>
 						<li><a id="login" href="profile.php"><?php echo $_SESSION['name']?></a></li>
-					<li style="float:right; background-color:gray;"><a href="main.php">Logout</a></li>
+					<li style="float:right; background-color:gray;"><a href="signout.php">Logout</a></li>
 				</ul>
 			</nav><br>
 		</header>

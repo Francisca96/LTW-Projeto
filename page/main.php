@@ -31,8 +31,8 @@
 	<div class="popup" data-popup="popup-1">
 		<div class="popup-inner">
 		<form action="../page/signin.php" method="post">
-			<input class="inputField" type="text" id="username" name="username" required="required" placeholder="Enter Username"><br>
-			<input class="inputField" type="password" id="password" name="password" required="required" placeholder="Enter Password"><br><br>
+			<input class="inputField" type="text" id="username" name="username" required="required" placeholder="Enter Username">
+			<input class="inputField" type="password" id="password" name="password" required="required" placeholder="Enter Password"><br>
 			<input id="submit" type="submit" value ="Submit">
 		</form>
 
@@ -43,21 +43,21 @@
 	<div class="popup" data-popup="popup-2">
 		<div class="popup-inner">
 		<form action="../page/signup.php" onsubmit="return validate(this);" method="post">
-			<input class="inputField" type="text" id="name" name="name" required="required" placeholder="Your Name"><br>
-			<input class="inputField" type="email" id="email" name="email" required="required" placeholder="Your Email"><br><br>
-			<input class="inputField" type="text" id="username" name="username" maxlength="15" required="required" placeholder="Your Username"><br><br>
-			<input class="inputField" type="password" id="password" name="password" minlength="8" required="required"  placeholder="Enter Password"><br><br>
-			<input class="inputField" type="password" id="passwordConfirm" name="passwordConfirm" required="required" placeholder="Confirm Password"><br><br>
+			<input class="inputField" type="text" id="name" name="name" required="required" placeholder="Your Name">
+			<input class="inputField" type="email" id="email" name="email" required="required" placeholder="Your Email">
+			<input class="inputField" type="text" id="username" name="username" maxlength="15" required="required" placeholder="Your Username">
+			<input class="inputField" type="password" id="password" name="password" minlength="8" required="required"  placeholder="Enter Password">
+			<input class="inputField" type="password" id="passwordConfirm" name="passwordConfirm" required="required" placeholder="Confirm Password"><br>
 			<fieldset name="gender">
-				<legend> Your Gender </legend>
-				<input type="radio" name="gender" value="male" checked> Male<br>
-				<input type="radio" name="gender" value="female"> Female<br>
+				<legend> Gender: </legend>
+				<input type="radio" name="gender" value="male" checked> Male
+				<input type="radio" name="gender" value="female"> Female
 				<input type="radio" name="gender" value="other"> Other
 			</fieldset>
 			<fieldset name="gender">
-				<legend> User Type </legend>
-				<input type="radio" name="type" value="owner" checked>Owner<br>
-				<input type="radio" name="type" value="client">Reviewer<br>
+				<legend> User Type: </legend>
+				<input type="radio" name="type" value="Owner" checked>Owner
+				<input type="radio" name="type" value="Client">Reviewer
 			</fieldset>
 			<input id="submit" type="submit" value ="Submit">
 		</form>

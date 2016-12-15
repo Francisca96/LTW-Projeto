@@ -66,11 +66,16 @@ session_start();
 				
 				
 				<div class="popup" data-popup="popup-1">
-					<div class="popup-inner">
-					<form action="../page/signin.php" method="post">
-						<input class="inputField" type="text" id="username" name="username" required="required" placeholder="Enter Username"><br>
-						<input class="inputField" type="password" id="password" name="password" required="required" placeholder="Enter Password"><br><br>
-						<input id="submit" type="submit" value ="Submit">
+					<div class="popup-inner"> 
+					
+					<form action="../page/change_name.php" method="post">
+						<input class="inputField" type="text" id="name" required="required" name="name" placeholder="New Name">
+						<input class= "editSubmit" id="submit" type="submit" value ="Change">
+
+					</form>
+					<form action="../page/change_email.php" method="post">
+						<input class="inputField" type="email" id="email" required="required" name="email" placeholder="New Email">
+						<input class= "editSubmit" id="submit" type="submit" value ="Change">
 					</form>
 					
 					<a class="popup-close" data-popup-close="popup-1" href="#">x</a>
@@ -80,8 +85,8 @@ session_start();
 				<div class="popup" data-popup="popup-2">
 					<div class="popup-inner">
 					<form action="../page/change_password.php" onsubmit="return validate(this);" method="post">
-						<input class="inputField" type="password" minlength="8" id="password" name="password" required="required" placeholder="New Password"><br>
-						<input class="inputField" type="password" id="passwordConfirm" name="passwordConfirm" required="required" placeholder="Confirm Password"><br><br>
+						<input class="inputField" type="password" minlength="8" id="password" name="password" required="required" placeholder="New Password">
+						<input class="inputField" type="password" id="passwordConfirm" name="passwordConfirm" required="required" placeholder="Confirm Password"><br>
 						<input id="submit" type="submit" value ="Submit">
 					</form>
 					
@@ -91,9 +96,36 @@ session_start();
 				
 				<div class="popup" data-popup="popup-3">
 					<div class="popup-inner">
-					<form action="../page/signin.php" method="post">
-						<input class="inputField" type="text" id="username" name="username" required="required" placeholder="Enter Username"><br>
-						<input class="inputField" type="password" id="password" name="password" required="required" placeholder="Enter Password"><br><br>
+					<form action="../page/createRestaurant.php" method="post">
+						<input class="inputField" type="text" minlength="2" required="required" name="name" placeholder="Restaurant Name">
+						<input class="inputField" type="text" required="required" name="location" placeholder="Location">
+						<input class="inputField" type="text" required="required" name="description" placeholder="Description">
+						<input class="inputField" type="tel" required="required" name="telephone" placeholder="Telephone Number">
+						<fieldset name="price">
+							<legend> Price: </legend>
+							<input type="radio" name="price" value="high"> High
+							<input type="radio" name="price" value="medium" checked> Medium
+							<input type="radio" name="price" value="low"> Low
+						</fieldset>
+						
+						
+						<select name="type">
+							<option value="Family Restaurant" checked>Family Restaurant</option>
+							<option value="Snack Bar">Snack Bar</option>
+							<option value="Caffé">Caffé</option>
+							<option value="Tea house">Tea house</option>
+							<option value="Casual Meals">Casual Meals</option>
+							<option value="Bar">Bar</option>
+							<option value="Pastry Shop">Pastry Shop</option>
+							<option value="Fast Food">Fast Food</option>
+							<option value="Bakery">Bakery</option>
+							<option value="Deserts">Deserts</option>
+							<option value="Pub">Pub</option>
+							<option value="Gourmet">Gourmet</option>
+							<option value="Winehouse">Winehouse</option>
+							<option value="Ice Cream Shop">Ice Cream Shop</option>
+							<option value="Food Truck">Food Truck</option>
+						</select><br><br>
 						<input id="submit" type="submit" value ="Submit">
 					</form>
 					
@@ -104,8 +136,8 @@ session_start();
 				<div class="popup" data-popup="popup-4">
 					<div class="popup-inner">
 					<form action="../page/signin.php" method="post">
-						<input class="inputField" type="text" id="username" name="username" required="required" placeholder="Enter Username"><br>
-						<input class="inputField" type="password" id="password" name="password" required="required" placeholder="Enter Password"><br><br>
+						<input class="inputField" type="text" id="username" name="username" required="required" placeholder="Enter Username">
+						<input class="inputField" type="password" id="password" name="password" required="required" placeholder="Enter Password"><br>
 						<input id="submit" type="submit" value ="Submit">
 					</form>
 					
